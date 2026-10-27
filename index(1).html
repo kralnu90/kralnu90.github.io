@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kralnu Games</title>
+<meta property="og:title" content="Kralnu Games">
+<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, and Solaris Gambit, a tactical card game.">
+<meta property="og:image" content="https://kralnu90.github.io/logo.png">
+<meta name="theme-color" content="#0c1811">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, and Solaris Gambit, a tactical card game.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<style>
+/* Layout: one column studio page. A short masthead with the logo, then the games as two big "shelf" cards, each in its own game's colours, then a small about and a Ko-fi band. Deliberately one dark look, taken from the logo. */
+:root{
+  color-scheme: dark;
+  --ground:#0c1811;      /* page, deep fairway at dusk */
+  --turf:#13281c;        /* raised surfaces */
+  --line:#284a37;        /* borders */
+  --chalk:#eef3e4;       /* main text */
+  --mist:#9db8a6;        /* secondary text */
+  --flag:#f2c14e;        /* brand gold */
+  --ft-a:#2f6b45; --ft-b:#183826;     /* Fairway Tales card */
+  --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--chalk);font:16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--flag);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;text-wrap:balance}
+
+/* masthead */
+.mast{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:
+    repeating-linear-gradient(115deg, rgba(238,243,228,.035) 0 34px, transparent 34px 68px),
+    radial-gradient(120% 90% at 85% 0%, rgba(242,193,78,.16), transparent 55%),
+    linear-gradient(180deg,#183826,var(--ground))}
+.mast .wrap{display:grid;grid-template-columns:auto 1fr;gap:20px 28px;align-items:center;padding-block:44px 52px}
+.mast img{width:clamp(96px,18vw,148px);height:auto;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.eyebrow{font:800 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--flag)}
+.mast h1{font-size:clamp(40px,8vw,76px);font-weight:800;letter-spacing:-.01em;margin-top:8px}
+.mast h1 span{color:var(--flag)}
+.mast p{margin:10px 0 0;color:var(--mist);max-width:46ch;font-size:clamp(16px,2.2vw,19px)}
+.mast .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:800 15px/1 var(--body);padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--turf);color:var(--chalk);transition:transform .12s,border-color .12s}
+.btn:hover{border-color:var(--flag);transform:translateY(-1px)}
+.btn.gold{background:var(--flag);border-color:var(--flag);color:#1d1a0e}
+.fairway{position:absolute;left:0;right:0;bottom:-1px;height:26px;pointer-events:none}
+
+/* games */
+section{padding-block:48px 8px}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.sec-h h2{font-size:clamp(28px,4.4vw,40px)}
+.sec-h p{margin:0;color:var(--mist)}
+.games{display:grid;gap:22px}
+.game{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px 32px;align-items:center;border-radius:22px;padding:26px;border:1px solid var(--line);overflow:hidden;position:relative}
+.game.ft{background:radial-gradient(90% 120% at 100% 0%,rgba(242,193,78,.14),transparent 60%),linear-gradient(150deg,var(--ft-a),var(--ft-b) 70%)}
+.game.sg{background:radial-gradient(90% 120% at 100% 0%,rgba(217,176,94,.12),transparent 60%),linear-gradient(150deg,var(--sg-a),var(--sg-b) 70%);border-color:#3c2f63}
+.game .info{min-width:0;display:grid;gap:12px;align-content:start}
+.tagline{font:800 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--flag)}
+.sg .tagline{color:var(--sg-gold)}
+.game h3{font-size:clamp(32px,5vw,52px);font-weight:800}
+.sg h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.08em;font-weight:700;color:var(--sg-gold)}
+.game .lede{margin:0;font-size:18px;max-width:52ch}
+.feat{margin:0;padding:0;list-style:none;display:grid;gap:7px;max-width:56ch}
+.feat li{position:relative;padding-left:22px;color:#dfe8d6}
+.sg .feat li{color:#e6e0f3}
+.feat li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--flag)}
+.sg .feat li::before{background:none;border:2px solid var(--sg-gold);border-radius:2px;transform:rotate(45deg);width:8px;height:8px}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.fact{font:800 12px/1 var(--body);padding:7px 11px;border-radius:999px;background:rgba(0,0,0,.25);border:1px solid rgba(238,243,228,.14);color:var(--chalk);font-variant-numeric:tabular-nums}
+.game .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.sg .btn.gold{background:var(--sg-gold);border-color:var(--sg-gold)}
+.phone{width:min(240px,62vw);aspect-ratio:9/18.5;border-radius:30px;padding:9px;background:#0a0f0b;box-shadow:0 18px 40px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08);position:relative}
+.phone video,.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:22px;display:block;background:#0e1d15}
+.sg .phone{background:#07050f}
+
+/* about + support */
+.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
+.about p{margin:0 0 12px;color:#dfe8d6;max-width:60ch}
+.about .card{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--turf);display:grid;gap:10px}
+.about .card h3{font-size:22px}
+.about dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px}
+.about dt{color:var(--mist)} .about dd{margin:0}
+.kofi{margin-block:44px 0;border-radius:22px;padding:26px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 24px;align-items:center;
+  background:linear-gradient(135deg,#2a2016,#1a1712 60%);border:1px solid #4d3a24}
+.kofi h2{font-size:clamp(24px,3.6vw,32px)}
+.kofi p{margin:6px 0 0;color:#d9cdb8;max-width:58ch}
+footer{padding-block:34px 40px;color:var(--mist);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer a{color:var(--mist)}
+
+@media (max-width:760px){
+  .game{grid-template-columns:1fr;padding:20px}
+  .game .shot{order:-1;justify-self:center}
+  .about,.kofi{grid-template-columns:1fr}
+  .mast .wrap{grid-template-columns:1fr;padding-block:32px 44px}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+
+
+<header class="mast">
+  <div class="wrap">
+    <img src="logo-256.png" alt="Kralnu Games logo: a K made from a flagstick and a gold flag, with a golf ball" width="148" height="148">
+    <div>
+      <div class="eyebrow">Independent game studio · UK</div>
+      <h1>Kralnu <span>Games</span></h1>
+      <p>Small games with big hearts, made one evening at a time. Everything here is free, and plays right in your phone's browser.</p>
+      <div class="links">
+        <a class="btn gold" href="#games">See the games</a>
+        <a class="btn" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+      </div>
+    </div>
+  </div>
+  <svg class="fairway" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 L0 14 C 220 2, 420 22, 640 12 S 1000 0, 1200 12 L1200 26 Z" fill="#0c1811"/></svg>
+</header>
+
+<main class="wrap">
+  <section id="games" aria-labelledby="games-h">
+    <div class="sec-h"><h2 id="games-h">The games</h2><p>Free to play · No download · Works offline once installed</p></div>
+    <div class="games">
+
+      <article class="game ft" aria-labelledby="ft-h">
+        <div class="info">
+          <div class="tagline">Golf RPG</div>
+          <h3 id="ft-h">Fairway Tales</h3>
+          <p class="lede">Swipe to swing, collect clubs and beat your rivals, from a sleepy country club all the way to a tour card.</p>
+          <ul class="feat">
+            <li>Four chapters and 36 holes: parkland, windswept links, a desert resort and a snowy mountain course</li>
+            <li>A swing that reads your whole stroke, and gets tougher as your handicap drops</li>
+            <li>44 clubs to level up, plus heads, shafts and grips to tune your setup</li>
+            <li>Challenge links: your friends play the same pins and wind on their own phones</li>
+          </ul>
+          <div class="facts"><span class="fact">v0.12</span><span class="fact">16 rivals</span><span class="fact">Course creator</span><span class="fact">In development</span></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/Fairway-Tales/" target="_blank" rel="noopener">Play Fairway Tales</a></div>
+        </div>
+        <div class="shot"><div class="phone"><video src="fairway-tales.mp4" poster="fairway-tales-poster.jpg" autoplay muted loop playsinline aria-label="A 3 wood shot over the trees onto the green in Fairway Tales"></video></div></div>
+      </article>
+
+      <article class="game sg" aria-labelledby="sg-h">
+        <div class="info">
+          <div class="tagline">Tactical card game</div>
+          <h3 id="sg-h">SOLARIS GAMBIT</h3>
+          <p class="lede">Nine squares. Ten cards. One winner. Place your cards, beat the numbers on their sides and turn the board your colour.</p>
+          <ul class="feat">
+            <li>Collect cards from packs and from the rivals you beat</li>
+            <li>House rules like Mirror, Sum, Chain and Aether to mix up every game</li>
+            <li>Daily challenge, puzzles, a gauntlet and a tournament</li>
+            <li>Forge your own signature card and power it up</li>
+          </ul>
+          <div class="facts"><span class="fact">Pass &amp; play</span><span class="fact">Daily challenge</span><span class="fact">In development</span></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/Solaris-Gambit/" target="_blank" rel="noopener">Play Solaris Gambit</a></div>
+        </div>
+        <div class="shot"><div class="phone"><img src="solaris-gambit.jpg" alt="A Solaris Gambit game in progress: blue and red cards on a three by three board" loading="lazy" width="520" height="1013"></div></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="about-h">
+    <div class="about">
+      <div>
+        <h2 id="about-h" class="sec-h" style="display:block;font-size:clamp(28px,4.4vw,40px);margin-bottom:14px">About</h2>
+        <p>Kralnu Games is a one-person studio. I make the games I want to play: proper progression, characters with a bit of personality, and controls built for one thumb on a phone.</p>
+        <p>Both games are still growing, with new chapters, rivals and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
+      </div>
+      <div class="card">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Games</dt><dd>2, both free</dd>
+          <dt>Plays on</dt><dd>Any phone or computer browser</dd>
+          <dt>Install</dt><dd>Add to home screen, then it works offline</dd>
+          <dt>Saves</dt><dd>On your device, with backup codes</dd>
+          <dt>Ads</dt><dd>None</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="kofi">
+      <div>
+        <h2>Enjoying them? Buy me a coffee.</h2>
+        <p>The games are free and staying that way. Support on Ko-fi goes into new chapters, new cards and, one day, getting both onto the Play Store.</p>
+      </div>
+      <a class="btn gold" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ ko-fi.com/kralnu90</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 kralnu90. All rights reserved.</span>
+    <span><a href="https://github.com/kralnu90" target="_blank" rel="noopener">GitHub</a> · <a href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">Ko-fi</a></span>
+  </footer>
+</main>
+
+</body>
+</html>
