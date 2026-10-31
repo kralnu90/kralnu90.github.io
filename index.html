@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kralnu Games</title>
 <meta property="og:title" content="Kralnu Games">
-<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, and Solaris Gambit, a tactical card game.">
+<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, and Tight Lines, a survival fishing adventure.">
 <meta property="og:image" content="https://kralnu90.github.io/logo.png">
 <meta name="theme-color" content="#0c1811">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, and Solaris Gambit, a tactical card game.">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, and Tight Lines, a survival fishing adventure.">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
 <style>
 /* Layout: one column studio page. A short masthead with the logo, then the games as two big "shelf" cards, each in its own game's colours, then a small about and a Ko-fi band. Deliberately one dark look, taken from the logo. */
 :root{
@@ -25,6 +25,7 @@
   --flag:#f2c14e;        /* brand gold */
   --ft-a:#2f6b45; --ft-b:#183826;     /* Fairway Tales card */
   --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
+  --tl-a:#1f4a52; --tl-b:#0d1f22; --tl-brass:#dcaa48; --tl-float:#e3593c; /* Tight Lines card */
   --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
 }
@@ -80,6 +81,13 @@ section{padding-block:48px 8px}
 .phone{width:min(240px,62vw);aspect-ratio:9/18.5;border-radius:30px;padding:9px;background:#0a0f0b;box-shadow:0 18px 40px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08);position:relative}
 .phone video,.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:22px;display:block;background:#0e1d15}
 .sg .phone{background:#07050f}
+.game.tl{background:radial-gradient(90% 120% at 100% 0%,rgba(228,138,90,.16),transparent 60%),linear-gradient(150deg,var(--tl-a),var(--tl-b) 70%);border-color:#2e5a4e}
+.tl .tagline{color:var(--tl-brass)}
+.tl h3{font-family:"Alegreya SC",Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.02em;color:var(--tl-brass)}
+.tl .feat li{color:#e2ece6}
+.tl .feat li::before{left:3px;top:.42em;width:6px;height:12px;border-radius:3px;background:linear-gradient(var(--tl-float) 0 45%,#f0e7d0 45%)}
+.tl .btn.gold{background:var(--tl-brass);border-color:var(--tl-brass)}
+.tl .phone{background:#081311}
 
 /* about + support */
 .about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
@@ -162,6 +170,24 @@ footer a{color:var(--mist)}
         <div class="shot"><div class="phone"><video src="solaris-gambit.mp4?v=2" poster="solaris-gambit.jpg" autoplay muted loop playsinline aria-label="A Solaris Gambit game in progress: blue and red cards on a three by three board"></video></div></div>
       </article>
 
+      <article class="game tl" aria-labelledby="tl-h">
+        <div class="info">
+          <div class="tagline">Survival fishing adventure</div>
+          <h3 id="tl-h">Tight Lines</h3>
+          <p class="lede">Read the water, fight every fish the way real anglers do, and get back to the inn before the cold, hunger or the dark gets you.</p>
+          <ul class="feat">
+            <li>23 fish across a river, a lake and the coast, each with its own way of fighting</li>
+            <li>Float, ledger, spinning and fly fishing, and each one plays differently</li>
+            <li>Survive on a day and night clock: fires, cooking, clean water and a warm bed</li>
+            <li>Sell your catch for Fish Bucks and work up from a willow whip to Master gear</li>
+            <li>Hardcore mode: one life, and your name on the tavern's memory board</li>
+          </ul>
+          <div class="facts"><span class="fact">v0.9.0</span><span class="fact">23 fish</span><span class="fact">Hardcore mode</span><span class="fact">Experimental</span></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/Tight-Lines/" target="_blank" rel="noopener">Play Tight Lines</a></div>
+        </div>
+        <div class="shot"><div class="phone"><video src="tight-lines.mp4?v=1" poster="tight-lines-poster.jpg" autoplay muted loop playsinline aria-label="A brown trout leaps during a dusk fight on Willowmere River in Tight Lines"></video></div></div>
+      </article>
+
     </div>
   </section>
 
@@ -170,12 +196,12 @@ footer a{color:var(--mist)}
       <div>
         <h2 id="about-h" class="sec-h" style="display:block;font-size:clamp(28px,4.4vw,40px);margin-bottom:14px">About</h2>
         <p>Kralnu Games is a one-person studio. I make the games I want to play: proper progression, characters with a bit of personality, and controls built for one thumb on a phone.</p>
-        <p>Both games are still growing, with new chapters, rivals and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
+        <p>All three games are still growing, with new chapters, rivals, waters and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
       </div>
       <div class="card">
         <h3>At a glance</h3>
         <dl>
-          <dt>Games</dt><dd>2, both free</dd>
+          <dt>Games</dt><dd>3, all free</dd>
           <dt>Plays on</dt><dd>Any phone or computer browser</dd>
           <dt>Install</dt><dd>Add to home screen, then it works offline</dd>
           <dt>Saves</dt><dd>On your device, with backup codes</dd>
@@ -187,7 +213,7 @@ footer a{color:var(--mist)}
     <div class="kofi">
       <div>
         <h2>Enjoying them? Buy me a coffee.</h2>
-        <p>The games are free and staying that way. Support on Ko-fi goes into new chapters, new cards and, one day, getting both onto the Play Store.</p>
+        <p>The games are free and staying that way. Support on Ko-fi goes into new chapters, new cards, new fish and, one day, getting them onto the Play Store.</p>
       </div>
       <a class="btn gold" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ ko-fi.com/kralnu90</a>
     </div>
