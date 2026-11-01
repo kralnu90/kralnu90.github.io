@@ -1,0 +1,25 @@
+[
+  {
+    "date": "2026-11-01",
+    "type": "announcement",
+    "title": "Introducing the public leaderboards!",
+    "message": "Both games now have online leaderboards, so you can see how you stack up against everyone else.",
+    "changes": [
+      {
+        "game": "Tight Lines",
+        "items": [
+          "New public leaderboard: who caught what",
+          "Catches show fish size and star rating"
+        ]
+      },
+      {
+        "game": "Fairway Tales",
+        "items": [
+          "New daily challenge leaderboard",
+          "Best round on each course",
+          "Holes-in-one hall of fame"
+        ]
+      }
+    ]
+  }
+]
