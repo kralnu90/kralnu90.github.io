@@ -6,7 +6,7 @@ The home page for Kralnu Games: free indie games you play in your browser.
 
 - [Fairway Tales](https://kralnu90.github.io/Fairway-Tales/): a golf RPG you play with one thumb
 - [Solaris Gambit](https://kralnu90.github.io/Solaris-Gambit/): a tactical card game
-- [Tight Lines](https://kralnu90.github.io/Tight-Lines/): a survival fishing adventure
+- [Tight Lines](https://kralnu90.github.io/tight-lines/): a survival fishing adventure
 
 ☕ [Support on Ko-fi](https://ko-fi.com/kralnu90)
 
