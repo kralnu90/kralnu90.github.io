@@ -89,6 +89,29 @@ section{padding-block:48px 8px}
 .tl .btn.gold{background:var(--tl-brass);border-color:var(--tl-brass)}
 .tl .phone{background:#081311}
 
+/* news */
+.news-list{display:grid;gap:16px}
+.post{border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:var(--turf);display:grid;gap:10px}
+.post.announcement{border-color:rgba(242,193,78,.45);background:radial-gradient(80% 140% at 100% 0%,rgba(242,193,78,.10),transparent 60%),var(--turf)}
+.post-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:800 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
+.post-badge{padding:6px 10px;border-radius:999px;background:var(--flag);color:#1d1a0e;letter-spacing:.08em}
+.post h3{font-size:clamp(22px,3.4vw,28px)}
+.post .msg{margin:0;color:#dfe8d6;max-width:64ch}
+.changes{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin-top:4px}
+.change{border-radius:14px;padding:14px 16px;border:1px solid rgba(238,243,228,.12);background:rgba(0,0,0,.22)}
+.change h4{margin:0 0 8px;font:800 15px/1.2 var(--body);color:var(--flag)}
+.change.ft{background:linear-gradient(150deg,rgba(47,107,69,.55),rgba(24,56,38,.55))}
+.change.sg{background:linear-gradient(150deg,rgba(58,36,112,.6),rgba(23,15,48,.6))}
+.change.sg h4{color:var(--sg-gold)}
+.change.tl{background:linear-gradient(150deg,rgba(31,74,82,.6),rgba(13,31,34,.6))}
+.change.tl h4{color:var(--tl-brass)}
+.change ul{margin:0;padding-left:18px;display:grid;gap:4px;color:#e2ece6;font-size:15px}
+.more{justify-self:start;cursor:pointer;font-family:var(--body)}
+.latest{border-left:3px solid var(--flag);padding:8px 0 8px 14px;max-width:56ch;font-size:15px;color:#dfe8d6}
+.sg .latest{border-color:var(--sg-gold)} .tl .latest{border-color:var(--tl-brass)}
+.latest b{display:block;font:800 11px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mist);margin-bottom:3px}
+.latest a{color:inherit;text-underline-offset:3px}
+
 /* about + support */
 .about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
 .about p{margin:0 0 12px;color:#dfe8d6;max-width:60ch}
@@ -124,6 +147,7 @@ footer a{color:var(--mist)}
       <p>Small games with big hearts, made one evening at a time. Everything here is free, and plays right in your phone's browser.</p>
       <div class="links">
         <a class="btn gold" href="#games">See the games</a>
+        <a class="btn" href="#news">📣 Latest news</a>
         <a class="btn" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
       </div>
     </div>
@@ -132,6 +156,11 @@ footer a{color:var(--mist)}
 </header>
 
 <main class="wrap">
+  <section id="news" aria-labelledby="news-h" hidden>
+    <div class="sec-h"><h2 id="news-h">Latest news</h2><p>Updates and announcements</p></div>
+    <div class="news-list" id="news-list"></div>
+  </section>
+
   <section id="games" aria-labelledby="games-h">
     <div class="sec-h"><h2 id="games-h">The games</h2><p>Free to play · No download · Works offline once installed</p></div>
     <div class="games">
@@ -148,6 +177,7 @@ footer a{color:var(--mist)}
             <li>Challenge links: your friends play the same pins and wind on their own phones</li>
           </ul>
           <div class="facts"><span class="fact">v0.12</span><span class="fact">16 rivals</span><span class="fact">Course creator</span><span class="fact">In development</span></div>
+          <div class="latest" data-game="Fairway Tales" hidden></div>
           <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/Fairway-Tales/" target="_blank" rel="noopener">Play Fairway Tales</a></div>
         </div>
         <div class="shot"><div class="phone"><video src="fairway-tales.mp4?v=2" poster="fairway-tales-poster.jpg" autoplay muted loop playsinline aria-label="A 3 wood shot over the trees onto the green in Fairway Tales"></video></div></div>
@@ -165,6 +195,7 @@ footer a{color:var(--mist)}
             <li>Forge your own signature card and power it up</li>
           </ul>
           <div class="facts"><span class="fact">Pass &amp; play</span><span class="fact">Daily challenge</span><span class="fact">In development</span></div>
+          <div class="latest" data-game="Solaris Gambit" hidden></div>
           <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/Solaris-Gambit/" target="_blank" rel="noopener">Play Solaris Gambit</a></div>
         </div>
         <div class="shot"><div class="phone"><video src="solaris-gambit.mp4?v=2" poster="solaris-gambit.jpg" autoplay muted loop playsinline aria-label="A Solaris Gambit game in progress: blue and red cards on a three by three board"></video></div></div>
@@ -182,7 +213,8 @@ footer a{color:var(--mist)}
             <li>Sell your catch for Fish Bucks and work up from a willow whip to Master gear</li>
             <li>Hardcore mode: one life, and your name on the tavern's memory board</li>
           </ul>
-          <div class="facts"><span class="fact">v0.9.0</span><span class="fact">23 fish</span><span class="fact">Hardcore mode</span><span class="fact">Experimental</span></div>
+          <div class="facts"><span class="fact">v0.11.0</span><span class="fact">23 fish</span><span class="fact">Hardcore mode</span><span class="fact">Experimental</span></div>
+          <div class="latest" data-game="Tight Lines" hidden></div>
           <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/tight-lines/" target="_blank" rel="noopener">Play Tight Lines</a></div>
         </div>
         <div class="shot"><div class="phone"><video src="tight-lines.mp4?v=1" poster="tight-lines-poster.jpg" autoplay muted loop playsinline aria-label="A brown trout leaps during a dusk fight on Willowmere River in Tight Lines"></video></div></div>
@@ -224,6 +256,84 @@ footer a{color:var(--mist)}
     <span><a href="https://github.com/kralnu90" target="_blank" rel="noopener">GitHub</a> · <a href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">Ko-fi</a></span>
   </footer>
 </main>
+
+<script>
+/* News: reads news.json (newest post first). To post, edit news.json on GitHub. */
+(function(){
+  var SHOW = 3; // posts shown before "Show older news"
+  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl"};
+  function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+  function niceDate(s){
+    var d = new Date(s+"T12:00:00");
+    return isNaN(d) ? s : d.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+  }
+  function slug(p,i){ return "post-"+(p.date||"")+"-"+i; }
+
+  function renderPost(p,i){
+    var art = el("article","post"+(p.type==="announcement"?" announcement":""));
+    art.id = slug(p,i);
+    var meta = el("div","post-meta");
+    if(p.type==="announcement") meta.appendChild(el("span","post-badge","Announcement"));
+    var t = el("time",null,niceDate(p.date)); t.dateTime = p.date||""; meta.appendChild(t);
+    art.appendChild(meta);
+    if(p.title) art.appendChild(el("h3",null,p.title));
+    if(p.message) art.appendChild(el("p","msg",p.message));
+    if(Array.isArray(p.changes) && p.changes.length){
+      var wrap = el("div","changes");
+      p.changes.forEach(function(c){
+        var box = el("div","change "+(GAME_CLASS[c.game]||""));
+        box.appendChild(el("h4",null,c.game));
+        var ul = el("ul");
+        (c.items||[]).forEach(function(it){ ul.appendChild(el("li",null,it)); });
+        box.appendChild(ul);
+        wrap.appendChild(box);
+      });
+      art.appendChild(wrap);
+    }
+    return art;
+  }
+
+  fetch("news.json",{cache:"no-cache"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(posts){
+      if(!Array.isArray(posts) || !posts.length) return;
+      var list = document.getElementById("news-list");
+      var hiddenPosts = [];
+      posts.forEach(function(p,i){
+        var node = renderPost(p,i);
+        if(i>=SHOW){ node.hidden = true; hiddenPosts.push(node); }
+        list.appendChild(node);
+      });
+      if(hiddenPosts.length){
+        var more = el("button","btn more","Show older news");
+        more.type = "button";
+        more.onclick = function(){ hiddenPosts.forEach(function(n){ n.hidden=false; }); more.remove(); };
+        list.appendChild(more);
+      }
+      document.getElementById("news").hidden = false;
+
+      // "Latest update" line on each game card
+      document.querySelectorAll(".latest[data-game]").forEach(function(box){
+        var name = box.getAttribute("data-game");
+        for(var i=0;i<posts.length;i++){
+          var ch = (posts[i].changes||[]).filter(function(c){ return c.game===name; })[0];
+          if(ch){
+            box.appendChild(el("b",null,"Latest update · "+niceDate(posts[i].date)));
+            var a = el("a",null,(ch.items||[])[0] || posts[i].title || "See what's new");
+            a.href = "#"+slug(posts[i],i);
+            if(i>=SHOW) a.addEventListener("click",function(){ var m=document.querySelector(".more"); if(m) m.click(); });
+            box.appendChild(a);
+            var extra = (ch.items||[]).length-1;
+            if(extra>0) box.appendChild(document.createTextNode(" (+"+extra+" more)"));
+            box.hidden = false;
+            break;
+          }
+        }
+      });
+    })
+    .catch(function(){ /* no news file yet: section stays hidden */ });
+})();
+</script>
 
 </body>
 </html>
