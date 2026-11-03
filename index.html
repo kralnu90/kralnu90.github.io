@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kralnu Games</title>
 <meta property="og:title" content="Kralnu Games">
-<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, and Tight Lines, a survival fishing adventure.">
+<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, and Metropolitan Misadventure, a slapstick open-world crime game.">
 <meta property="og:image" content="https://kralnu90.github.io/logo.png">
 <meta name="theme-color" content="#0c1811">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, and Tight Lines, a survival fishing adventure.">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, and Metropolitan Misadventure, a slapstick open-world crime game.">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
 <style>
 /* Layout: one column studio page. A short masthead with the logo, then the games as two big "shelf" cards, each in its own game's colours, then a small about and a Ko-fi band. Deliberately one dark look, taken from the logo. */
 :root{
@@ -25,6 +25,7 @@
   --flag:#f2c14e;        /* brand gold */
   --ft-a:#2f6b45; --ft-b:#183826;     /* Fairway Tales card */
   --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
+  --mm-a:#3a2a3e; --mm-b:#141218; --mm-amber:#ffb347; --mm-red:#ff5d73; /* Metropolitan Misadventure card */
   --tl-a:#1f4a52; --tl-b:#0d1f22; --tl-brass:#dcaa48; --tl-float:#e3593c; /* Tight Lines card */
   --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
@@ -88,6 +89,18 @@ section{padding-block:48px 8px}
 .tl .feat li::before{left:3px;top:.42em;width:6px;height:12px;border-radius:3px;background:linear-gradient(var(--tl-float) 0 45%,#f0e7d0 45%)}
 .tl .btn.gold{background:var(--tl-brass);border-color:var(--tl-brass)}
 .tl .phone{background:#081311}
+
+.game.mm{background:radial-gradient(90% 120% at 100% 0%,rgba(255,93,115,.16),transparent 60%),linear-gradient(150deg,var(--mm-a),var(--mm-b) 70%);border-color:#4a3646}
+.mm .tagline{color:var(--mm-red)}
+.mm h3{font-family:"Bungee",Impact,"Arial Black",sans-serif;font-weight:400;font-size:clamp(28px,4.4vw,44px);color:var(--mm-amber);line-height:1.08}
+.mm h3 small{display:block;font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--chalk);margin-top:8px}
+.mm .feat li{color:#ece4e6}
+.mm .feat li::before{background:var(--mm-amber);border-radius:2px;width:10px;height:6px;top:.7em}
+.mm .btn.gold{background:var(--mm-amber);border-color:var(--mm-amber)}
+.mm .latest{border-color:var(--mm-amber)}
+.mm .phone{background:#0b0a0e}
+.change.mm{background:linear-gradient(150deg,rgba(58,42,62,.65),rgba(20,18,24,.65))}
+.change.mm h4{color:var(--mm-amber)}
 
 /* news */
 .news-list{display:grid;gap:16px}
@@ -220,6 +233,24 @@ footer a{color:var(--mist)}
         <div class="shot"><div class="phone"><video src="tight-lines.mp4?v=1" poster="tight-lines-poster.jpg" autoplay muted loop playsinline aria-label="A brown trout leaps during a dusk fight on Willowmere River in Tight Lines"></video></div></div>
       </article>
 
+      <article class="game mm" aria-labelledby="mm-h">
+        <div class="info">
+          <div class="tagline">Open-world crime caper</div>
+          <h3 id="mm-h">Metropolitan Misadventure<small>in a Criminal City</small></h3>
+          <p class="lede">Nick a car, run dodgy jobs across five districts and work your way up to taking down Shifty Shaw. Think Benny Hill meets GTA.</p>
+          <ul class="feat">
+            <li>Five district contacts, each with their own daft story chain</li>
+            <li>Taxi fares, paper rounds, car boosts, smuggling runs and getaways</li>
+            <li>Buy safe houses and dodgy businesses for passive income</li>
+            <li>Day and night cycle, coppers in proper helmets, and a casino with a free daily spin</li>
+          </ul>
+          <div class="facts"><span class="fact">5 districts</span><span class="fact">Story finale</span><span class="fact">New</span><span class="fact">In development</span></div>
+          <div class="latest" data-game="Metropolitan Misadventure" hidden></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnu90.github.io/metropolitan-misadventures-/" target="_blank" rel="noopener">Play Metropolitan Misadventure</a></div>
+        </div>
+        <div class="shot"><div class="phone"><img src="metropolitan-misadventure.jpg" alt="Driving a red car through the docks in Metropolitan Misadventure, with the city map in the corner" loading="lazy"></div></div>
+      </article>
+
     </div>
   </section>
 
@@ -228,12 +259,12 @@ footer a{color:var(--mist)}
       <div>
         <h2 id="about-h" class="sec-h" style="display:block;font-size:clamp(28px,4.4vw,40px);margin-bottom:14px">About</h2>
         <p>Kralnu Games is a one-person studio. I make the games I want to play: proper progression, characters with a bit of personality, and controls built for one thumb on a phone.</p>
-        <p>All three games are still growing, with new chapters, rivals, waters and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
+        <p>All four games are still growing, with new chapters, rivals, waters and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
       </div>
       <div class="card">
         <h3>At a glance</h3>
         <dl>
-          <dt>Games</dt><dd>3, all free</dd>
+          <dt>Games</dt><dd>4, all free</dd>
           <dt>Plays on</dt><dd>Any phone or computer browser</dd>
           <dt>Install</dt><dd>Add to home screen, then it works offline</dd>
           <dt>Saves</dt><dd>On your device, with backup codes</dd>
@@ -261,7 +292,7 @@ footer a{color:var(--mist)}
 /* News: reads news.json (newest post first). To post, edit news.json on GitHub. */
 (function(){
   var SHOW = 3; // posts shown before "Show older news"
-  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl"};
+  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm"};
   function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
   function niceDate(s){
     var d = new Date(s+"T12:00:00");

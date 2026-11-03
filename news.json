@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-03",
+    "type": "announcement",
+    "title": "New game: Metropolitan Misadventure!",
+    "message": "Game number four is here. A slapstick open-world crime caper where you nick cars, run dodgy jobs for five district contacts and build a criminal empire. Free to play and installable like the others.",
+    "changes": [
+      {
+        "game": "Metropolitan Misadventure",
+        "items": [
+          "Five districts, each with its own contact and story chain",
+          "Jobs, safe houses, businesses and a casino",
+          "Installs to your home screen and plays offline"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-01",
     "type": "announcement",
     "title": "Introducing the public leaderboards!",
