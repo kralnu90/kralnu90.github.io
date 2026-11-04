@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-04",
+    "type": "announcement",
+    "title": "New game: Python Kitchen!",
+    "message": "Game number five is a bit different: it teaches you to code. Chef Dorran calls the orders from the pass, you write real Python to clear each ticket, and you work your way up from Kitchen Porter to Head Chef. No experience needed.",
+    "changes": [
+      {
+        "game": "Python Kitchen",
+        "items": [
+          "24 tickets across breakfast, lunch, dinner and late service",
+          "Practice station and a full Python cookbook with runnable examples",
+          "Installs to your home screen and plays offline"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "type": "announcement",
     "title": "New game: Metropolitan Misadventure!",

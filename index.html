@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kralnu Games</title>
 <meta property="og:title" content="Kralnu Games">
-<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, and Metropolitan Misadventure, a slapstick open-world crime game.">
+<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and Python Kitchen, a game that teaches you to code.">
 <meta property="og:image" content="https://kralnugames.com/logo.png">
 <meta name="theme-color" content="#0c1811">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, and Metropolitan Misadventure, a slapstick open-world crime game.">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and Python Kitchen, a game that teaches you to code.">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
 <style>
 /* Layout: one column studio page. A short masthead with the logo, then the games as two big "shelf" cards, each in its own game's colours, then a small about and a Ko-fi band. Deliberately one dark look, taken from the logo. */
 :root{
@@ -26,6 +26,7 @@
   --ft-a:#2f6b45; --ft-b:#183826;     /* Fairway Tales card */
   --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
   --mm-a:#3a2a3e; --mm-b:#141218; --mm-amber:#ffb347; --mm-red:#ff5d73; /* Metropolitan Misadventure card */
+  --pk-a:#2a3238; --pk-b:#111518; --pk-lamp:#f0912e; --pk-tile:rgba(238,243,228,.045); /* Python Kitchen card */
   --tl-a:#1f4a52; --tl-b:#0d1f22; --tl-brass:#dcaa48; --tl-float:#e3593c; /* Tight Lines card */
   --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
@@ -102,6 +103,33 @@ section{padding-block:48px 8px}
 .change.mm{background:linear-gradient(150deg,rgba(58,42,62,.65),rgba(20,18,24,.65))}
 .change.mm h4{color:var(--mm-amber)}
 
+/* Python Kitchen: steel pass, tiled wall, a heat lamp glowing over the card */
+.game.pk{border-color:#3a444b;padding-top:44px;
+  background:
+    radial-gradient(60% 70% at 78% 0%,rgba(240,145,46,.30),transparent 70%),
+    linear-gradient(var(--pk-tile) 1px,transparent 1px) 0 0/48px 24px,
+    linear-gradient(90deg,var(--pk-tile) 1px,transparent 1px) 0 0/48px 24px,
+    linear-gradient(170deg,var(--pk-a),var(--pk-b) 75%)}
+.pk::before{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(#5a666e,#2a3238);border-top:1px solid #8a969e}
+.pk .heat{position:absolute;top:0;right:clamp(60px,14%,150px);width:96px;pointer-events:none}
+.pk .heat::before{content:"";display:block;width:3px;height:14px;margin:0 auto;background:#5a666e}
+.pk .heat b{display:block;height:20px;border-radius:5px 5px 40px 40px;background:linear-gradient(#8a969e,#3a444b)}
+.pk .heat i{position:absolute;left:50%;top:32px;width:44px;height:7px;transform:translateX(-50%);border-radius:50%;background:#ffb347;box-shadow:0 0 22px 8px rgba(255,170,60,.55);animation:pkglow 3.2s ease-in-out infinite}
+@keyframes pkglow{0%,100%{opacity:1}50%{opacity:.78}}
+.pk .tagline{color:var(--pk-lamp)}
+.pk h3{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(40px,6.4vw,64px);line-height:.92}
+.pk h3 span{color:var(--pk-lamp)}
+.pk .bark{margin:0;max-width:52ch;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.15;background:#f5f6f4;color:#1d2429;border-radius:14px;padding:10px 14px;position:relative}
+.pk .bark small{display:block;font:800 11px/1 var(--body);letter-spacing:.12em;color:#c45f08;margin-bottom:4px}
+.pk .feat li{color:#e3e8eb}
+.pk .feat li::before{left:2px;top:.45em;width:10px;height:12px;border-radius:1px;background:#f5f6f4;box-shadow:inset 0 -3px 0 var(--pk-lamp)}
+.pk .feat code{font:600 .88em "JetBrains Mono",ui-monospace,monospace;color:#ffc58a}
+.pk .btn.gold{background:var(--pk-lamp);border-color:var(--pk-lamp)}
+.pk .latest{border-color:var(--pk-lamp)}
+.pk .phone{background:#0c0f12;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(240,145,46,.18),inset 0 0 0 1px rgba(255,255,255,.08)}
+.change.pk{background:linear-gradient(150deg,rgba(42,50,56,.7),rgba(17,21,24,.7))}
+.change.pk h4{color:var(--pk-lamp)}
+
 /* news */
 .news-list{display:grid;gap:16px}
 .post{border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:var(--turf);display:grid;gap:10px}
@@ -145,7 +173,7 @@ footer a{color:var(--mist)}
   .about,.kofi{grid-template-columns:1fr}
   .mast .wrap{grid-template-columns:1fr;padding-block:32px 44px}
 }
-@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.pk .heat i{animation:none}}
 </style>
 </head>
 <body>
@@ -251,6 +279,26 @@ footer a{color:var(--mist)}
         <div class="shot"><div class="phone"><img src="metropolitan-misadventure.jpg" alt="Driving a red car through the docks in Metropolitan Misadventure, with the city map in the corner" loading="lazy"></div></div>
       </article>
 
+      <article class="game pk" aria-labelledby="pk-h">
+        <div class="heat" aria-hidden="true"><b></b><i></i></div>
+        <div class="info">
+          <div class="tagline">Learn to code · Kitchen sim</div>
+          <h3 id="pk-h">Python <span>Kitchen</span></h3>
+          <p class="bark"><small>Chef Dorran shouts</small>Right, new starter! Tickets are coming in. Write the code, clear the rail!</p>
+          <p class="lede">Learn real Python by working the pass. Chef calls the orders, you write the code, and you climb the brigade from Kitchen Porter to Head Chef.</p>
+          <ul class="feat">
+            <li>24 tickets over four services, from <code>print()</code> to functions, dictionaries and <code>try</code>/<code>except</code></li>
+            <li>Real Python 3 running in your browser, checked against real output</li>
+            <li>Hints instead of answers, and error messages in plain English</li>
+            <li>A practice station to mess about in, plus a full Python cookbook with runnable examples</li>
+          </ul>
+          <div class="facts"><span class="fact">24 tickets</span><span class="fact">Real Python 3</span><span class="fact">Beginner friendly</span><span class="fact">New</span></div>
+          <div class="latest" data-game="Python Kitchen" hidden></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/kitchen-coder/" target="_blank" rel="noopener">Start your first shift</a></div>
+        </div>
+        <div class="shot"><div class="phone"><img src="python-kitchen.jpg" alt="Chef Dorran behind the kitchen pass calling a ticket in Python Kitchen" loading="lazy"></div></div>
+      </article>
+
     </div>
   </section>
 
@@ -259,12 +307,12 @@ footer a{color:var(--mist)}
       <div>
         <h2 id="about-h" class="sec-h" style="display:block;font-size:clamp(28px,4.4vw,40px);margin-bottom:14px">About</h2>
         <p>Kralnu Games is a one-person studio. I make the games I want to play: proper progression, characters with a bit of personality, and controls built for one thumb on a phone.</p>
-        <p>All four games are still growing, with new chapters, rivals, waters and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
+        <p>All five games are still growing, with new chapters, rivals, waters, tickets and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
       </div>
       <div class="card">
         <h3>At a glance</h3>
         <dl>
-          <dt>Games</dt><dd>4, all free</dd>
+          <dt>Games</dt><dd>5, all free</dd>
           <dt>Plays on</dt><dd>Any phone or computer browser</dd>
           <dt>Install</dt><dd>Add to home screen, then it works offline</dd>
           <dt>Saves</dt><dd>On your device, with backup codes</dd>
@@ -292,7 +340,7 @@ footer a{color:var(--mist)}
 /* News: reads news.json (newest post first). To post, edit news.json on GitHub. */
 (function(){
   var SHOW = 3; // posts shown before "Show older news"
-  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm"};
+  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk"};
   function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
   function niceDate(s){
     var d = new Date(s+"T12:00:00");
