@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-11-05",
+    "type": "announcement",
+    "title": "New game: Garage Code!",
+    "message": "Game number six is the second learn-to-code game, this time set in a car garage. Les the foreman hands you jobs, you write Python to sign them off, and the car on the ramp reacts to every line you write. No experience needed.",
+    "changes": [
+      {
+        "game": "Garage Code",
+        "items": [
+          "10 jobs from print() to functions, with a short manual page for each new idea",
+          "Tyre checks, fault codes and a boss-level MOT day tested on hidden cars",
+          "Make your own jobs and share them with a mate"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "type": "announcement",
     "title": "New game: Python Kitchen!",

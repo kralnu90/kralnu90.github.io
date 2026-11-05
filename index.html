@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kralnu Games</title>
 <meta property="og:title" content="Kralnu Games">
-<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and Python Kitchen, a game that teaches you to code.">
+<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and two games that teach you to code: Python Kitchen and Garage Code.">
 <meta property="og:image" content="https://kralnugames.com/logo.png">
 <meta name="theme-color" content="#0c1811">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and Python Kitchen, a game that teaches you to code.">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and two games that teach you to code: Python Kitchen and Garage Code.">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
@@ -27,6 +27,7 @@
   --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
   --mm-a:#3a2a3e; --mm-b:#141218; --mm-amber:#ffb347; --mm-red:#ff5d73; /* Metropolitan Misadventure card */
   --pk-a:#2a3238; --pk-b:#111518; --pk-lamp:#f0912e; --pk-tile:rgba(238,243,228,.045); /* Python Kitchen card */
+  --gc-a:#2a3440; --gc-b:#12171d; --gc-orange:#ef7434; --gc-yellow:#f3c614; /* Garage Code card */
   --tl-a:#1f4a52; --tl-b:#0d1f22; --tl-brass:#dcaa48; --tl-float:#e3593c; /* Tight Lines card */
   --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
@@ -129,6 +130,23 @@ section{padding-block:48px 8px}
 .pk .phone{background:#0c0f12;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(240,145,46,.18),inset 0 0 0 1px rgba(255,255,255,.08)}
 .change.pk{background:linear-gradient(150deg,rgba(42,50,56,.7),rgba(17,21,24,.7))}
 .change.pk h4{color:var(--pk-lamp)}
+/* Garage Code: workshop bay, hazard-striped floor edge, a yellow number plate */
+.game.gc{border-color:#3a4552;padding-bottom:30px;background:linear-gradient(170deg,var(--gc-a),var(--gc-b) 75%)}
+.game.gc::before{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(-45deg,var(--gc-yellow) 0 12px,#111 12px 24px);opacity:.85}
+.gc .plate{position:absolute;top:18px;right:clamp(18px,4%,40px);font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;font-size:18px;letter-spacing:.06em;background:var(--gc-yellow);color:#111;border:2px solid #111;border-radius:4px;padding:1px 10px 0;pointer-events:none}
+.gc .tagline{color:var(--gc-orange)}
+.gc h3{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(40px,6.4vw,64px);line-height:.92}
+.gc h3 span{color:var(--gc-orange)}
+.gc .bark{margin:0;max-width:52ch;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.15;background:#f5f6f4;color:#1b2430;border-radius:4px 14px 14px 14px;padding:10px 14px}
+.gc .bark small{display:block;font:800 11px/1 var(--body);letter-spacing:.12em;color:#1f3a5f;margin-bottom:4px}
+.gc .feat li{color:#e3e8eb}
+.gc .feat li::before{left:1px;top:.4em;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#b8c0c8 0 3px,#1d2228 3.5px);box-shadow:0 0 0 1px #8b96a1}
+.gc .feat code{font:600 .88em "JetBrains Mono",ui-monospace,monospace;color:#ffb98a}
+.gc .btn.gold{background:var(--gc-orange);border-color:var(--gc-orange)}
+.gc .latest{border-color:var(--gc-orange)}
+.gc .phone{background:#0c0f12;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(239,116,52,.16),inset 0 0 0 1px rgba(255,255,255,.08)}
+.change.gc{background:linear-gradient(150deg,rgba(42,52,64,.7),rgba(18,23,29,.7))}
+.change.gc h4{color:var(--gc-orange)}
 
 /* news */
 .news-list{display:grid;gap:16px}
@@ -170,6 +188,7 @@ footer a{color:var(--mist)}
 @media (max-width:760px){
   .game{grid-template-columns:1fr;padding:20px}
   .game .shot{order:-1;justify-self:center}
+  .gc .plate{display:none}
   .about,.kofi{grid-template-columns:1fr}
   .mast .wrap{grid-template-columns:1fr;padding-block:32px 44px}
 }
@@ -299,6 +318,27 @@ footer a{color:var(--mist)}
         <div class="shot"><div class="phone"><img src="python-kitchen.jpg" alt="Chef Dorran behind the kitchen pass calling a ticket in Python Kitchen" loading="lazy"></div></div>
       </article>
 
+      <article class="game gc" aria-labelledby="gc-h">
+        <div class="plate" aria-hidden="true">GC21 KRS</div>
+        <div class="info">
+          <div class="tagline">Learn to code · Garage sim</div>
+          <h3 id="gc-h">Garage <span>Code</span></h3>
+          <p class="bark"><small>Les the foreman says</small>Nothing goes up on my ramp without paperwork. Write the code, sign off the job!</p>
+          <p class="lede">Learn Python by running a car garage. Every job in the bay is a coding problem: book cars in, check tyres across a taxi fleet, read fault codes and pass MOT day.</p>
+          <ul class="feat">
+            <li>10 jobs from <code>print()</code> to functions, each with a short workshop manual page</li>
+            <li>The car reacts to your code: your <code>reg</code> goes on the plate, errors make the bonnet smoke</li>
+            <li>Hidden test cars, plain-English errors, and hints from Les for £5 out of the till</li>
+            <li>Make your own jobs and send them to a mate with a share code</li>
+          </ul>
+          <div class="facts"><span class="fact">10 jobs</span><span class="fact">Job maker</span><span class="fact">Beginner friendly</span><span class="fact">New</span></div>
+          <div class="latest" data-game="Garage Code" hidden></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/garage-code/" target="_blank" rel="noopener">Open the garage</a></div>
+        </div>
+        <div class="shot"><div class="phone"><img src="garage-code.jpg" alt="A white taxi on a two-post lift with three tyre checks passed in Garage Code" loading="lazy"></div></div>
+      </article>
+
+
     </div>
   </section>
 
@@ -340,7 +380,7 @@ footer a{color:var(--mist)}
 /* News: reads news.json (newest post first). To post, edit news.json on GitHub. */
 (function(){
   var SHOW = 3; // posts shown before "Show older news"
-  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk"};
+  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk","Garage Code":"gc"};
   function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
   function niceDate(s){
     var d = new Date(s+"T12:00:00");
