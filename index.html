@@ -4,209 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kralnu Games</title>
-<meta property="og:title" content="Kralnu Games">
-<meta property="og:description" content="Free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and two games that teach you to code: Python Kitchen and Garage Code.">
-<meta property="og:image" content="https://kralnugames.com/logo.png">
-<meta name="theme-color" content="#0c1811">
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Kralnu Games makes free indie games you play in your browser: Fairway Tales, a golf RPG, Solaris Gambit, a tactical card game, Tight Lines, a survival fishing adventure, Metropolitan Misadventure, a slapstick open-world crime game, and two games that teach you to code: Python Kitchen and Garage Code.">
-<link rel="icon" href="favicon.png">
+<meta name="description" content="Kralnu Games makes free indie games you play in your browser. Fun games like Fairway Tales, Tight Lines, Solaris Gambit and Metropolitan Misadventure, games that teach you to code like Python Kitchen and Garage Code, and games for kids on the way.">
+<meta property="og:title" content="Kralnu Games">
+<meta property="og:description" content="Kralnu Games makes free indie games you play in your browser. Fun games like Fairway Tales, Tight Lines, Solaris Gambit and Metropolitan Misadventure, games that teach you to code like Python Kitchen and Garage Code, and games for kids on the way.">
+<meta property="og:image" content="https://kralnugames.com/logo.png">
+<meta property="og:url" content="https://kralnugames.com/">
+<meta name="theme-color" content="#0c1811">
+<link rel="icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
-<style>
-/* Layout: one column studio page. A short masthead with the logo, then the games as two big "shelf" cards, each in its own game's colours, then a small about and a Ko-fi band. Deliberately one dark look, taken from the logo. */
-:root{
-  color-scheme: dark;
-  --ground:#0c1811;      /* page, deep fairway at dusk */
-  --turf:#13281c;        /* raised surfaces */
-  --line:#284a37;        /* borders */
-  --chalk:#eef3e4;       /* main text */
-  --mist:#9db8a6;        /* secondary text */
-  --flag:#f2c14e;        /* brand gold */
-  --ft-a:#2f6b45; --ft-b:#183826;     /* Fairway Tales card */
-  --sg-a:#3a2470; --sg-b:#170f30; --sg-gold:#d9b05e; /* Solaris Gambit card */
-  --mm-a:#3a2a3e; --mm-b:#141218; --mm-amber:#ffb347; --mm-red:#ff5d73; /* Metropolitan Misadventure card */
-  --pk-a:#2a3238; --pk-b:#111518; --pk-lamp:#f0912e; --pk-tile:rgba(238,243,228,.045); /* Python Kitchen card */
-  --gc-a:#2a3440; --gc-b:#12171d; --gc-orange:#ef7434; --gc-yellow:#f3c614; /* Garage Code card */
-  --tl-a:#1f4a52; --tl-b:#0d1f22; --tl-brass:#dcaa48; --tl-float:#e3593c; /* Tight Lines card */
-  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
-  --body:"Nunito Sans","Segoe UI",system-ui,sans-serif;
-}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--chalk);font:16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-a{color:inherit}
-a:focus-visible,button:focus-visible{outline:2px solid var(--flag);outline-offset:3px;border-radius:6px}
-h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;text-wrap:balance}
-
-/* masthead */
-.mast{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
-  background:
-    repeating-linear-gradient(115deg, rgba(238,243,228,.035) 0 34px, transparent 34px 68px),
-    radial-gradient(120% 90% at 85% 0%, rgba(242,193,78,.16), transparent 55%),
-    linear-gradient(180deg,#183826,var(--ground))}
-.mast .wrap{display:grid;grid-template-columns:auto 1fr;gap:20px 28px;align-items:center;padding-block:44px 52px}
-.mast img{width:clamp(96px,18vw,148px);height:auto;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,.45)}
-.eyebrow{font:800 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--flag)}
-.mast h1{font-size:clamp(40px,8vw,76px);font-weight:800;letter-spacing:-.01em;margin-top:8px}
-.mast h1 span{color:var(--flag)}
-.mast p{margin:10px 0 0;color:var(--mist);max-width:46ch;font-size:clamp(16px,2.2vw,19px)}
-.mast .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:800 15px/1 var(--body);padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--turf);color:var(--chalk);transition:transform .12s,border-color .12s}
-.btn:hover{border-color:var(--flag);transform:translateY(-1px)}
-.btn.gold{background:var(--flag);border-color:var(--flag);color:#1d1a0e}
-.fairway{position:absolute;left:0;right:0;bottom:-1px;height:26px;pointer-events:none}
-
-/* games */
-section{padding-block:48px 8px}
-.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
-.sec-h h2{font-size:clamp(28px,4.4vw,40px)}
-.sec-h p{margin:0;color:var(--mist)}
-.games{display:grid;gap:22px}
-.game{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px 32px;align-items:center;border-radius:22px;padding:26px;border:1px solid var(--line);overflow:hidden;position:relative}
-.game.ft{background:radial-gradient(90% 120% at 100% 0%,rgba(242,193,78,.14),transparent 60%),linear-gradient(150deg,var(--ft-a),var(--ft-b) 70%)}
-.game.sg{background:radial-gradient(90% 120% at 100% 0%,rgba(217,176,94,.12),transparent 60%),linear-gradient(150deg,var(--sg-a),var(--sg-b) 70%);border-color:#3c2f63}
-.game .info{min-width:0;display:grid;gap:12px;align-content:start}
-.tagline{font:800 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--flag)}
-.sg .tagline{color:var(--sg-gold)}
-.game h3{font-size:clamp(32px,5vw,52px);font-weight:800}
-.sg h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.08em;font-weight:700;color:var(--sg-gold)}
-.game .lede{margin:0;font-size:18px;max-width:52ch}
-.feat{margin:0;padding:0;list-style:none;display:grid;gap:7px;max-width:56ch}
-.feat li{position:relative;padding-left:22px;color:#dfe8d6}
-.sg .feat li{color:#e6e0f3}
-.feat li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--flag)}
-.sg .feat li::before{background:none;border:2px solid var(--sg-gold);border-radius:2px;transform:rotate(45deg);width:8px;height:8px}
-.facts{display:flex;flex-wrap:wrap;gap:8px}
-.fact{font:800 12px/1 var(--body);padding:7px 11px;border-radius:999px;background:rgba(0,0,0,.25);border:1px solid rgba(238,243,228,.14);color:var(--chalk);font-variant-numeric:tabular-nums}
-.game .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
-.sg .btn.gold{background:var(--sg-gold);border-color:var(--sg-gold)}
-.phone{width:min(240px,62vw);aspect-ratio:9/18.5;border-radius:30px;padding:9px;background:#0a0f0b;box-shadow:0 18px 40px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08);position:relative}
-.phone video,.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:22px;display:block;background:#0e1d15}
-.sg .phone{background:#07050f}
-.game.tl{background:radial-gradient(90% 120% at 100% 0%,rgba(228,138,90,.16),transparent 60%),linear-gradient(150deg,var(--tl-a),var(--tl-b) 70%);border-color:#2e5a4e}
-.tl .tagline{color:var(--tl-brass)}
-.tl h3{font-family:"Alegreya SC",Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.02em;color:var(--tl-brass)}
-.tl .feat li{color:#e2ece6}
-.tl .feat li::before{left:3px;top:.42em;width:6px;height:12px;border-radius:3px;background:linear-gradient(var(--tl-float) 0 45%,#f0e7d0 45%)}
-.tl .btn.gold{background:var(--tl-brass);border-color:var(--tl-brass)}
-.tl .phone{background:#081311}
-
-.game.mm{background:radial-gradient(90% 120% at 100% 0%,rgba(255,93,115,.16),transparent 60%),linear-gradient(150deg,var(--mm-a),var(--mm-b) 70%);border-color:#4a3646}
-.mm .tagline{color:var(--mm-red)}
-.mm h3{font-family:"Bungee",Impact,"Arial Black",sans-serif;font-weight:400;font-size:clamp(28px,4.4vw,44px);color:var(--mm-amber);line-height:1.08}
-.mm h3 small{display:block;font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--chalk);margin-top:8px}
-.mm .feat li{color:#ece4e6}
-.mm .feat li::before{background:var(--mm-amber);border-radius:2px;width:10px;height:6px;top:.7em}
-.mm .btn.gold{background:var(--mm-amber);border-color:var(--mm-amber)}
-.mm .latest{border-color:var(--mm-amber)}
-.mm .phone{background:#0b0a0e}
-.change.mm{background:linear-gradient(150deg,rgba(58,42,62,.65),rgba(20,18,24,.65))}
-.change.mm h4{color:var(--mm-amber)}
-
-/* Python Kitchen: steel pass, tiled wall, a heat lamp glowing over the card */
-.game.pk{border-color:#3a444b;padding-top:44px;
-  background:
-    radial-gradient(60% 70% at 78% 0%,rgba(240,145,46,.30),transparent 70%),
-    linear-gradient(var(--pk-tile) 1px,transparent 1px) 0 0/48px 24px,
-    linear-gradient(90deg,var(--pk-tile) 1px,transparent 1px) 0 0/48px 24px,
-    linear-gradient(170deg,var(--pk-a),var(--pk-b) 75%)}
-.game.pk::before{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(#5a666e,#2a3238);border-top:1px solid #8a969e}
-.pk .heat{position:absolute;top:0;right:clamp(60px,14%,150px);width:96px;pointer-events:none}
-.pk .heat::before{content:"";display:block;width:3px;height:14px;margin:0 auto;background:#5a666e}
-.pk .heat b{display:block;height:20px;border-radius:5px 5px 40px 40px;background:linear-gradient(#8a969e,#3a444b)}
-.pk .heat i{position:absolute;left:50%;top:32px;width:44px;height:7px;transform:translateX(-50%);border-radius:50%;background:#ffb347;box-shadow:0 0 22px 8px rgba(255,170,60,.55);animation:pkglow 3.2s ease-in-out infinite}
-@keyframes pkglow{0%,100%{opacity:1}50%{opacity:.78}}
-.pk .tagline{color:var(--pk-lamp)}
-.pk h3{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(40px,6.4vw,64px);line-height:.92}
-.pk h3 span{color:var(--pk-lamp)}
-.pk .bark{margin:0;max-width:52ch;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.15;background:#f5f6f4;color:#1d2429;border-radius:14px;padding:10px 14px;position:relative}
-.pk .bark small{display:block;font:800 11px/1 var(--body);letter-spacing:.12em;color:#c45f08;margin-bottom:4px}
-.pk .feat li{color:#e3e8eb}
-.pk .feat li::before{left:2px;top:.45em;width:10px;height:12px;border-radius:1px;background:#f5f6f4;box-shadow:inset 0 -3px 0 var(--pk-lamp)}
-.pk .feat code{font:600 .88em "JetBrains Mono",ui-monospace,monospace;color:#ffc58a}
-.pk .btn.gold{background:var(--pk-lamp);border-color:var(--pk-lamp)}
-.pk .latest{border-color:var(--pk-lamp)}
-.pk .phone{background:#0c0f12;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(240,145,46,.18),inset 0 0 0 1px rgba(255,255,255,.08)}
-.change.pk{background:linear-gradient(150deg,rgba(42,50,56,.7),rgba(17,21,24,.7))}
-.change.pk h4{color:var(--pk-lamp)}
-/* Garage Code: workshop bay, hazard-striped floor edge, a yellow number plate */
-.game.gc{border-color:#3a4552;padding-bottom:30px;background:linear-gradient(170deg,var(--gc-a),var(--gc-b) 75%)}
-.game.gc::before{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(-45deg,var(--gc-yellow) 0 12px,#111 12px 24px);opacity:.85}
-.gc .plate{position:absolute;top:18px;right:clamp(18px,4%,40px);font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;font-size:18px;letter-spacing:.06em;background:var(--gc-yellow);color:#111;border:2px solid #111;border-radius:4px;padding:1px 10px 0;pointer-events:none}
-.gc .tagline{color:var(--gc-orange)}
-.gc h3{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(40px,6.4vw,64px);line-height:.92}
-.gc h3 span{color:var(--gc-orange)}
-.gc .bark{margin:0;max-width:52ch;font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.15;background:#f5f6f4;color:#1b2430;border-radius:4px 14px 14px 14px;padding:10px 14px}
-.gc .bark small{display:block;font:800 11px/1 var(--body);letter-spacing:.12em;color:#1f3a5f;margin-bottom:4px}
-.gc .feat li{color:#e3e8eb}
-.gc .feat li::before{left:1px;top:.4em;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#b8c0c8 0 3px,#1d2228 3.5px);box-shadow:0 0 0 1px #8b96a1}
-.gc .feat code{font:600 .88em "JetBrains Mono",ui-monospace,monospace;color:#ffb98a}
-.gc .btn.gold{background:var(--gc-orange);border-color:var(--gc-orange)}
-.gc .latest{border-color:var(--gc-orange)}
-.gc .phone{background:#0c0f12;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(239,116,52,.16),inset 0 0 0 1px rgba(255,255,255,.08)}
-.change.gc{background:linear-gradient(150deg,rgba(42,52,64,.7),rgba(18,23,29,.7))}
-.change.gc h4{color:var(--gc-orange)}
-
-/* news */
-.news-list{display:grid;gap:16px}
-.post{border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:var(--turf);display:grid;gap:10px}
-.post.announcement{border-color:rgba(242,193,78,.45);background:radial-gradient(80% 140% at 100% 0%,rgba(242,193,78,.10),transparent 60%),var(--turf)}
-.post-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font:800 12px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--mist)}
-.post-badge{padding:6px 10px;border-radius:999px;background:var(--flag);color:#1d1a0e;letter-spacing:.08em}
-.post h3{font-size:clamp(22px,3.4vw,28px)}
-.post .msg{margin:0;color:#dfe8d6;max-width:64ch}
-.changes{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin-top:4px}
-.change{border-radius:14px;padding:14px 16px;border:1px solid rgba(238,243,228,.12);background:rgba(0,0,0,.22)}
-.change h4{margin:0 0 8px;font:800 15px/1.2 var(--body);color:var(--flag)}
-.change.ft{background:linear-gradient(150deg,rgba(47,107,69,.55),rgba(24,56,38,.55))}
-.change.sg{background:linear-gradient(150deg,rgba(58,36,112,.6),rgba(23,15,48,.6))}
-.change.sg h4{color:var(--sg-gold)}
-.change.tl{background:linear-gradient(150deg,rgba(31,74,82,.6),rgba(13,31,34,.6))}
-.change.tl h4{color:var(--tl-brass)}
-.change ul{margin:0;padding-left:18px;display:grid;gap:4px;color:#e2ece6;font-size:15px}
-.more{justify-self:start;cursor:pointer;font-family:var(--body)}
-.latest{border-left:3px solid var(--flag);padding:8px 0 8px 14px;max-width:56ch;font-size:15px;color:#dfe8d6}
-.sg .latest{border-color:var(--sg-gold)} .tl .latest{border-color:var(--tl-brass)}
-.latest b{display:block;font:800 11px/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mist);margin-bottom:3px}
-.latest a{color:inherit;text-underline-offset:3px}
-
-/* about + support */
-.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
-.about p{margin:0 0 12px;color:#dfe8d6;max-width:60ch}
-.about .card{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--turf);display:grid;gap:10px}
-.about .card h3{font-size:22px}
-.about dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px}
-.about dt{color:var(--mist)} .about dd{margin:0}
-.kofi{margin-block:44px 0;border-radius:22px;padding:26px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 24px;align-items:center;
-  background:linear-gradient(135deg,#2a2016,#1a1712 60%);border:1px solid #4d3a24}
-.kofi h2{font-size:clamp(24px,3.6vw,32px)}
-.kofi p{margin:6px 0 0;color:#d9cdb8;max-width:58ch}
-footer{padding-block:34px 40px;color:var(--mist);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
-footer a{color:var(--mist)}
-
-@media (max-width:760px){
-  .game{grid-template-columns:1fr;padding:20px}
-  .game .shot{order:-1;justify-self:center}
-  .gc .plate{display:none}
-  .about,.kofi{grid-template-columns:1fr}
-  .mast .wrap{grid-template-columns:1fr;padding-block:32px 44px}
-}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}.pk .heat i{animation:none}}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&family=Fredoka:wght@500;700&display=swap">
+<link rel="stylesheet" href="/site.css?v=1">
 </head>
 <body>
+<script>if(location.hash==="#games")location.replace("/play/");</script>
+<nav class="site-nav" aria-label="Site">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-current="page"><img src="/logo-256.png" alt="Kralnu Games home" width="34" height="34"><span>Kralnu <b>Games</b></span></a>
+    <div class="nav-links"><a class="nl play" href="/play/">Play</a><a class="nl learn" href="/learn/">Learn</a><a class="nl kids" href="/kids/">Kids</a></div>
+  </div>
+</nav>
 
-
-<header class="mast">
+<header class="hero mast">
   <div class="wrap">
-    <img src="logo-256.png" alt="Kralnu Games logo: a K made from a flagstick and a gold flag, with a golf ball" width="148" height="148">
+    <img class="logo" src="/logo-256.png" alt="Kralnu Games logo: a K made from a flagstick and a gold flag, with a golf ball" width="148" height="148">
     <div>
       <div class="eyebrow">Independent game studio · UK</div>
       <h1>Kralnu <span>Games</span></h1>
       <p>Small games with big hearts, made one evening at a time. Everything here is free, and plays right in your phone's browser.</p>
       <div class="links">
-        <a class="btn gold" href="#games">See the games</a>
+        <a class="btn gold" href="/play/">Play the games</a>
         <a class="btn" href="#news">📣 Latest news</a>
         <a class="btn" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
       </div>
@@ -216,243 +44,70 @@ footer a{color:var(--mist)}
 </header>
 
 <main class="wrap">
+  <section aria-labelledby="doors-h">
+    <div class="sec-h"><h2 id="doors-h">Pick a door</h2><p>Free to play · No download · No ads</p></div>
+    <div class="doors">
+      <a class="door play" href="/play/">
+        <span class="count">4 games</span>
+        <h3>Fun games</h3>
+        <p>Golf, fishing, cards and a daft crime caper. Proper progression, built for one thumb.</p>
+        <ul><li>Fairway Tales</li><li>Tight Lines</li><li>Solaris Gambit</li><li>Metropolitan Misadventure</li></ul>
+        <span class="go">Into the games room</span>
+      </a>
+      <a class="door learn" href="/learn/">
+        <span class="count">2 games</span>
+        <h3>Learn to <span>code</span></h3>
+        <p>Learn real Python by working a kitchen pass or running a car garage. No experience needed.</p>
+        <ul><li>Python Kitchen</li><li>Garage Code</li></ul>
+        <span class="go">Open the workshop</span>
+      </a>
+      <a class="door kids" href="/kids/">
+        <span class="count">Coming soon</span>
+        <h3>For kids</h3>
+        <p>Gentle, bright games for little ones. Counting, letters, shapes and first steps into coding.</p>
+        <ul><li>No ads</li><li>No chat</li><li>No purchases</li></ul>
+        <span class="go">Take a peek</span>
+      </a>
+    </div>
+  </section>
+
   <section id="news" aria-labelledby="news-h" hidden>
     <div class="sec-h"><h2 id="news-h">Latest news</h2><p>Updates and announcements</p></div>
     <div class="news-list" id="news-list"></div>
   </section>
 
-  <section id="games" aria-labelledby="games-h">
-    <div class="sec-h"><h2 id="games-h">The games</h2><p>Free to play · No download · Works offline once installed</p></div>
-    <div class="games">
-
-      <article class="game ft" aria-labelledby="ft-h">
-        <div class="info">
-          <div class="tagline">Golf RPG</div>
-          <h3 id="ft-h">Fairway Tales</h3>
-          <p class="lede">Swipe to swing, collect clubs and beat your rivals, from a sleepy country club all the way to a tour card.</p>
-          <ul class="feat">
-            <li>Four chapters and 36 holes: parkland, windswept links, a desert resort and a snowy mountain course</li>
-            <li>A swing that reads your whole stroke, and gets tougher as your handicap drops</li>
-            <li>44 clubs to level up, plus heads, shafts and grips to tune your setup</li>
-            <li>Challenge links: your friends play the same pins and wind on their own phones</li>
-          </ul>
-          <div class="facts"><span class="fact">v0.12</span><span class="fact">16 rivals</span><span class="fact">Course creator</span><span class="fact">In development</span></div>
-          <div class="latest" data-game="Fairway Tales" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/Fairway-Tales/" target="_blank" rel="noopener">Play Fairway Tales</a></div>
-        </div>
-        <div class="shot"><div class="phone"><video src="fairway-tales.mp4?v=2" poster="fairway-tales-poster.jpg" autoplay muted loop playsinline aria-label="A 3 wood shot over the trees onto the green in Fairway Tales"></video></div></div>
-      </article>
-
-      <article class="game sg" aria-labelledby="sg-h">
-        <div class="info">
-          <div class="tagline">Tactical card game</div>
-          <h3 id="sg-h">SOLARIS GAMBIT</h3>
-          <p class="lede">Nine squares. Ten cards. One winner. Place your cards, beat the numbers on their sides and turn the board your colour.</p>
-          <ul class="feat">
-            <li>Collect cards from packs and from the rivals you beat</li>
-            <li>House rules like Mirror, Sum, Chain and Aether to mix up every game</li>
-            <li>Daily challenge, puzzles, a gauntlet and a tournament</li>
-            <li>Forge your own signature card and power it up</li>
-          </ul>
-          <div class="facts"><span class="fact">Pass &amp; play</span><span class="fact">Daily challenge</span><span class="fact">In development</span></div>
-          <div class="latest" data-game="Solaris Gambit" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/Solaris-Gambit/" target="_blank" rel="noopener">Play Solaris Gambit</a></div>
-        </div>
-        <div class="shot"><div class="phone"><video src="solaris-gambit.mp4?v=2" poster="solaris-gambit.jpg" autoplay muted loop playsinline aria-label="A Solaris Gambit game in progress: blue and red cards on a three by three board"></video></div></div>
-      </article>
-
-      <article class="game tl" aria-labelledby="tl-h">
-        <div class="info">
-          <div class="tagline">Survival fishing adventure</div>
-          <h3 id="tl-h">Tight Lines</h3>
-          <p class="lede">Read the water, fight every fish the way real anglers do, and get back to the inn before the cold, hunger or the dark gets you.</p>
-          <ul class="feat">
-            <li>23 fish across a river, a lake and the coast, each with its own way of fighting</li>
-            <li>Float, ledger, spinning and fly fishing, and each one plays differently</li>
-            <li>Survive on a day and night clock: fires, cooking, clean water and a warm bed</li>
-            <li>Sell your catch for Fish Bucks and work up from a willow whip to Master gear</li>
-            <li>Hardcore mode: one life, and your name on the tavern's memory board</li>
-          </ul>
-          <div class="facts"><span class="fact">v0.11.0</span><span class="fact">23 fish</span><span class="fact">Hardcore mode</span><span class="fact">Experimental</span></div>
-          <div class="latest" data-game="Tight Lines" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/tight-lines/" target="_blank" rel="noopener">Play Tight Lines</a></div>
-        </div>
-        <div class="shot"><div class="phone"><video src="tight-lines.mp4?v=2" poster="tight-lines-poster.jpg?v=2" autoplay muted loop playsinline aria-label="A brown trout leaps during a dusk fight on Willowmere River in Tight Lines"></video></div></div>
-      </article>
-
-      <article class="game mm" aria-labelledby="mm-h">
-        <div class="info">
-          <div class="tagline">Open-world crime caper</div>
-          <h3 id="mm-h">Metropolitan Misadventure<small>in a Criminal City</small></h3>
-          <p class="lede">Nick a car, run dodgy jobs across five districts and work your way up to taking down Shifty Shaw. Think Benny Hill meets GTA.</p>
-          <ul class="feat">
-            <li>Five district contacts, each with their own daft story chain</li>
-            <li>Taxi fares, paper rounds, car boosts, smuggling runs and getaways</li>
-            <li>Buy safe houses and dodgy businesses for passive income</li>
-            <li>Day and night cycle, coppers in proper helmets, and a casino with a free daily spin</li>
-          </ul>
-          <div class="facts"><span class="fact">5 districts</span><span class="fact">Story finale</span><span class="fact">New</span><span class="fact">In development</span></div>
-          <div class="latest" data-game="Metropolitan Misadventure" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/metropolitan-misadventures-/" target="_blank" rel="noopener">Play Metropolitan Misadventure</a></div>
-        </div>
-        <div class="shot"><div class="phone"><img src="metropolitan-misadventure.jpg" alt="Driving a red car through the docks in Metropolitan Misadventure, with the city map in the corner" loading="lazy"></div></div>
-      </article>
-
-      <article class="game pk" aria-labelledby="pk-h">
-        <div class="heat" aria-hidden="true"><b></b><i></i></div>
-        <div class="info">
-          <div class="tagline">Learn to code · Kitchen sim</div>
-          <h3 id="pk-h">Python <span>Kitchen</span></h3>
-          <p class="bark"><small>Chef Dorran shouts</small>Right, new starter! Tickets are coming in. Write the code, clear the rail!</p>
-          <p class="lede">Learn real Python by working the pass. Chef calls the orders, you write the code, and you climb the brigade from Kitchen Porter to Head Chef.</p>
-          <ul class="feat">
-            <li>24 tickets over four services, from <code>print()</code> to functions, dictionaries and <code>try</code>/<code>except</code></li>
-            <li>Real Python 3 running in your browser, checked against real output</li>
-            <li>Hints instead of answers, and error messages in plain English</li>
-            <li>A practice station to mess about in, plus a full Python cookbook with runnable examples</li>
-          </ul>
-          <div class="facts"><span class="fact">24 tickets</span><span class="fact">Real Python 3</span><span class="fact">Beginner friendly</span><span class="fact">New</span></div>
-          <div class="latest" data-game="Python Kitchen" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/kitchen-coder/" target="_blank" rel="noopener">Start your first shift</a></div>
-        </div>
-        <div class="shot"><div class="phone"><img src="python-kitchen.jpg" alt="Chef Dorran behind the kitchen pass calling a ticket in Python Kitchen" loading="lazy"></div></div>
-      </article>
-
-      <article class="game gc" aria-labelledby="gc-h">
-        <div class="plate" aria-hidden="true">GC21 KRS</div>
-        <div class="info">
-          <div class="tagline">Learn to code · Garage sim</div>
-          <h3 id="gc-h">Garage <span>Code</span></h3>
-          <p class="bark"><small>Les the foreman says</small>Nothing goes up on my ramp without paperwork. Write the code, sign off the job!</p>
-          <p class="lede">Learn Python by running a car garage. Every job in the bay is a coding problem: book cars in, check tyres across a taxi fleet, read fault codes and pass MOT day.</p>
-          <ul class="feat">
-            <li>10 jobs from <code>print()</code> to functions, each with a short workshop manual page</li>
-            <li>The car reacts to your code: your <code>reg</code> goes on the plate, errors make the bonnet smoke</li>
-            <li>Hidden test cars, plain-English errors, and hints from Les for £5 out of the till</li>
-            <li>Make your own jobs and send them to a mate with a share code</li>
-          </ul>
-          <div class="facts"><span class="fact">10 jobs</span><span class="fact">Job maker</span><span class="fact">Beginner friendly</span><span class="fact">New</span></div>
-          <div class="latest" data-game="Garage Code" hidden></div>
-          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/garage-code/" target="_blank" rel="noopener">Open the garage</a></div>
-        </div>
-        <div class="shot"><div class="phone"><img src="garage-code.jpg" alt="A white taxi on a two-post lift with three tyre checks passed in Garage Code" loading="lazy"></div></div>
-      </article>
-
-
-    </div>
-  </section>
-
   <section aria-labelledby="about-h">
     <div class="about">
       <div>
-        <h2 id="about-h" class="sec-h" style="display:block;font-size:clamp(28px,4.4vw,40px);margin-bottom:14px">About</h2>
+        <h2 id="about-h">About</h2>
         <p>Kralnu Games is a one-person studio. I make the games I want to play: proper progression, characters with a bit of personality, and controls built for one thumb on a phone.</p>
-        <p>All five games are still growing, with new chapters, rivals, waters, tickets and modes on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
+        <p>All six games are still growing, with new chapters, rivals, waters, tickets and jobs on the way. Feedback shapes what comes next, so every game has a review button in its menu.</p>
       </div>
       <div class="card">
         <h3>At a glance</h3>
         <dl>
-          <dt>Games</dt><dd>5, all free</dd>
+          <dt>Games</dt><dd>6, all free, with kids' games on the way</dd>
           <dt>Plays on</dt><dd>Any phone or computer browser</dd>
           <dt>Install</dt><dd>Add to home screen, then it works offline</dd>
-          <dt>Saves</dt><dd>On your device, with backup codes</dd>
+          <dt>Saves</dt><dd>On your device</dd>
           <dt>Ads</dt><dd>None</dd>
         </dl>
       </div>
     </div>
-
-    <div class="kofi">
-      <div>
-        <h2>Enjoying them? Buy me a coffee.</h2>
-        <p>The games are free and staying that way. Support on Ko-fi goes into new chapters, new cards, new fish and, one day, getting them onto the Play Store.</p>
-      </div>
-      <a class="btn gold" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ ko-fi.com/kralnu90</a>
+  <div class="kofi">
+    <div>
+      <h2>Enjoying them? Buy me a coffee.</h2>
+      <p>The games are free and staying that way. Support on Ko-fi goes into new chapters, new jobs, new fish and, one day, getting them onto the Play Store.</p>
     </div>
+    <a class="btn gold" href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">☕ ko-fi.com/kralnu90</a>
+  </div>
   </section>
 
   <footer>
     <span>© 2026 kralnu90. All rights reserved.</span>
-    <span><a href="mailto:hello@kralnugames.com">hello@kralnugames.com</a> · <a href="https://github.com/kralnu90" target="_blank" rel="noopener">GitHub</a> · <a href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">Ko-fi</a></span>
+    <nav aria-label="Footer"><a href="/">Home</a><a href="/play/">Fun games</a><a href="/learn/">Learn to code</a><a href="/kids/">For kids</a><a href="mailto:hello@kralnugames.com">hello@kralnugames.com</a><a href="https://github.com/kralnu90" target="_blank" rel="noopener">GitHub</a><a href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">Ko-fi</a></nav>
   </footer>
 </main>
-
-<script>
-/* News: reads news.json (newest post first). To post, edit news.json on GitHub. */
-(function(){
-  var SHOW = 3; // posts shown before "Show older news"
-  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk","Garage Code":"gc"};
-  function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
-  function niceDate(s){
-    var d = new Date(s+"T12:00:00");
-    return isNaN(d) ? s : d.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
-  }
-  function slug(p,i){ return "post-"+(p.date||"")+"-"+i; }
-
-  function renderPost(p,i){
-    var art = el("article","post"+(p.type==="announcement"?" announcement":""));
-    art.id = slug(p,i);
-    var meta = el("div","post-meta");
-    if(p.type==="announcement") meta.appendChild(el("span","post-badge","Announcement"));
-    var t = el("time",null,niceDate(p.date)); t.dateTime = p.date||""; meta.appendChild(t);
-    art.appendChild(meta);
-    if(p.title) art.appendChild(el("h3",null,p.title));
-    if(p.message) art.appendChild(el("p","msg",p.message));
-    if(Array.isArray(p.changes) && p.changes.length){
-      var wrap = el("div","changes");
-      p.changes.forEach(function(c){
-        var box = el("div","change "+(GAME_CLASS[c.game]||""));
-        box.appendChild(el("h4",null,c.game));
-        var ul = el("ul");
-        (c.items||[]).forEach(function(it){ ul.appendChild(el("li",null,it)); });
-        box.appendChild(ul);
-        wrap.appendChild(box);
-      });
-      art.appendChild(wrap);
-    }
-    return art;
-  }
-
-  fetch("news.json",{cache:"no-cache"})
-    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
-    .then(function(posts){
-      if(!Array.isArray(posts) || !posts.length) return;
-      var list = document.getElementById("news-list");
-      var hiddenPosts = [];
-      posts.forEach(function(p,i){
-        var node = renderPost(p,i);
-        if(i>=SHOW){ node.hidden = true; hiddenPosts.push(node); }
-        list.appendChild(node);
-      });
-      if(hiddenPosts.length){
-        var more = el("button","btn more","Show older news");
-        more.type = "button";
-        more.onclick = function(){ hiddenPosts.forEach(function(n){ n.hidden=false; }); more.remove(); };
-        list.appendChild(more);
-      }
-      document.getElementById("news").hidden = false;
-
-      // "Latest update" line on each game card
-      document.querySelectorAll(".latest[data-game]").forEach(function(box){
-        var name = box.getAttribute("data-game");
-        for(var i=0;i<posts.length;i++){
-          var ch = (posts[i].changes||[]).filter(function(c){ return c.game===name; })[0];
-          if(ch){
-            box.appendChild(el("b",null,"Latest update · "+niceDate(posts[i].date)));
-            var a = el("a",null,(ch.items||[])[0] || posts[i].title || "See what's new");
-            a.href = "#"+slug(posts[i],i);
-            if(i>=SHOW) a.addEventListener("click",function(){ var m=document.querySelector(".more"); if(m) m.click(); });
-            box.appendChild(a);
-            var extra = (ch.items||[]).length-1;
-            if(extra>0) box.appendChild(document.createTextNode(" (+"+extra+" more)"));
-            box.hidden = false;
-            break;
-          }
-        }
-      });
-    })
-    .catch(function(){ /* no news file yet: section stays hidden */ });
-})();
-</script>
-
+<script src="/news.js?v=1"></script>
 </body>
 </html>
