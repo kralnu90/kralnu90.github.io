@@ -2,6 +2,22 @@
  {
   "date": "2026-11-05",
   "type": "update",
+  "title": "Python Kitchen 2.2: your pass, your specials",
+  "message": "The pass now fills up as you learn: every ticket you clear adds a piece of kit, from a chopping board to pots, pans and a service bell, until it's a proper busy working pass. There's a recipe binder with a short page on every new idea, and graduates can write their own tickets and send them to friends as Chef's specials.",
+  "changes": [
+   {
+    "game": "Python Kitchen",
+    "items": [
+     "The pass fills up with kit as you clear tickets",
+     "Recipe binder: a page on every new idea",
+     "Chef's specials: write and share your own tickets"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "type": "update",
   "title": "Python Kitchen 2.1: graduation day",
   "message": "Python Kitchen has a proper main menu, a one-minute guided tour of your first ticket, a quick recap quiz after each service, and a brand-new graduation project: build a working till that takes orders, catches bad input and prints a receipt. Clear it to become Chef Patron.",
   "changes": [
