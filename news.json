@@ -2,6 +2,22 @@
   {
     "date": "2026-11-05",
     "type": "announcement",
+    "title": "New for kids: Peekaboo Meadow!",
+    "message": "Our first game for little ones is here. A sunny meadow where everything does something when you tap it: animals pop out of the bushes, the sun giggles and clouds rain flowers. A friendly voice asks your little one to find each animal, so no reading is needed and nobody ever loses.",
+    "changes": [
+      {
+        "game": "Peekaboo Meadow",
+        "items": [
+          "Find the bunny, hedgehog, fox, frog and bird to fill the star jar",
+          "Balloon party every five stars",
+          "Press-and-hold grown-ups settings for sounds, voice and the find-it game"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "type": "announcement",
     "title": "New game: Garage Code!",
     "message": "Game number six is the second learn-to-code game, this time set in a car garage. Les the foreman hands you jobs, you write Python to sign them off, and the car on the ramp reacts to every line you write. No experience needed.",
     "changes": [

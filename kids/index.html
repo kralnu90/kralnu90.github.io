@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>For kids · Kralnu Games</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Free, gentle games for young children from Kralnu Games, coming soon. Counting, letters, shapes and first steps into coding, with no ads, no chat and no purchases.">
+<meta name="description" content="Free, gentle games for young children from Kralnu Games, starting with Peekaboo Meadow. Counting, letters, shapes and first steps into coding, with no ads, no chat and no purchases.">
 <meta property="og:title" content="For kids · Kralnu Games">
-<meta property="og:description" content="Free, gentle games for young children from Kralnu Games, coming soon. Counting, letters, shapes and first steps into coding, with no ads, no chat and no purchases.">
+<meta property="og:description" content="Free, gentle games for young children from Kralnu Games, starting with Peekaboo Meadow. Counting, letters, shapes and first steps into coding, with no ads, no chat and no purchases.">
 <meta property="og:image" content="https://kralnugames.com/logo.png">
 <meta property="og:url" content="https://kralnugames.com/kids/">
 <meta name="theme-color" content="#bfe6ff">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Bungee&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&family=Fredoka:wght@500;700&display=swap">
-<link rel="stylesheet" href="/site.css?v=1">
+<link rel="stylesheet" href="/site.css?v=2">
 </head>
 <body class="kids">
 <nav class="site-nav" aria-label="Site">
@@ -31,7 +31,7 @@
     <div class="eyebrow">For little ones</div>
     <h1>Games for <span>kids</span></h1>
     <p>Bright, gentle games for young children to play with a grown-up nearby. Counting, letters, shapes and first steps into coding, all through play.</p>
-    <div class="soon">🌱 The first games are being planted</div>
+    <a class="soon" href="#games-h">🌱 Our first game is here: Peekaboo Meadow</a>
   </div>
   <svg class="meadow" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true">
     <path d="M0 180 V90 C 180 40, 360 120, 560 80 S 900 30, 1200 80 V180 Z" fill="#9bd770"/>
@@ -45,8 +45,31 @@
 </header>
 
 <main class="wrap">
+  <section aria-labelledby="games-h">
+    <div class="sec-h"><h2 id="games-h">Our games</h2><p>Free, gentle and made for little hands</p></div>
+    <div class="games">
+      <article class="game pm" aria-labelledby="pm-h">
+        <div class="info">
+          <div class="tagline">Ages 2 to 5 · Tap and find</div>
+          <h3 id="pm-h">Peekaboo <span>Meadow</span></h3>
+          <p class="lede">A sunny meadow where everything does something. Animals pop out of the bushes, the sun giggles, clouds rain flowers and balloons float up to be popped.</p>
+          <ul class="feat">
+            <li>A friendly voice asks "Can you find the fox?" with a picture, so no reading is needed</li>
+            <li>Every find earns a star, and five stars starts a balloon party</li>
+            <li>Nothing to get wrong: every tap gets a sound, a surprise or a new word</li>
+            <li>A press-and-hold grown-ups button for sounds, voice and the find-it game</li>
+          </ul>
+          <div class="facts"><span class="fact">No reading needed</span><span class="fact">No ads</span><span class="fact">No losing</span><span class="fact">New</span></div>
+          <div class="latest" data-game="Peekaboo Meadow" hidden></div>
+          <div class="ctas"><a class="btn gold" href="https://kralnugames.com/peekaboo-medows/" target="_blank" rel="noopener">Play Peekaboo Meadow</a></div>
+        </div>
+        <div class="shot"><div class="phone"><img src="/peekaboo-meadow.jpg" alt="A sunny meadow with an apple tree, a frog on a lily pad and a speech bubble asking to find the bunny" loading="lazy"></div></div>
+      </article>
+    </div>
+  </section>
+
   <section aria-labelledby="promise-h">
-    <div class="sec-h"><h2 id="promise-h">What to expect</h2><p>The rules every kids' game will follow</p></div>
+    <div class="sec-h"><h2 id="promise-h">Our promise</h2><p>The rules every kids' game follows</p></div>
     <div class="promise">
       <div class="card"><div class="ico" aria-hidden="true">1</div><h3>Big and simple</h3><p>Large buttons, clear pictures and very little reading, so small hands can play.</p></div>
       <div class="card"><div class="ico" aria-hidden="true">✓</div><h3>No ads, ever</h3><p>Nothing to tap by accident and nothing trying to sell anything.</p></div>
@@ -55,10 +78,15 @@
     </div>
   </section>
 
+  <section id="news" aria-labelledby="news-h" data-games="Peekaboo Meadow" hidden>
+    <div class="sec-h"><h2 id="news-h">Kids' news</h2><p>New games and updates</p></div>
+    <div class="news-list" id="news-list"></div>
+  </section>
+
   <section aria-labelledby="parents-h">
     <div class="parents">
       <h2 id="parents-h">For grown-ups</h2>
-      <p>The kids' games will be free like everything else here and will play in any phone or tablet browser. New games will be announced on the home page news first.</p>
+      <p>The kids' games are free like everything else here and play in any phone or tablet browser. Turn the sound up: the voice and sounds are half the fun. New games are announced in the news first.</p>
       <p>Got an idea for a game your little one would love? Email <b>hello@kralnugames.com</b>.</p>
       <div><a class="btn gold" href="/#news">See the latest news</a></div>
     </div>
@@ -69,6 +97,6 @@
     <nav aria-label="Footer"><a href="/">Home</a><a href="/play/">Fun games</a><a href="/learn/">Learn to code</a><a href="/kids/">For kids</a><a href="mailto:hello@kralnugames.com">hello@kralnugames.com</a><a href="https://github.com/kralnu90" target="_blank" rel="noopener">GitHub</a><a href="https://ko-fi.com/kralnu90" target="_blank" rel="noopener">Ko-fi</a></nav>
   </footer>
 </main>
-<script src="/news.js?v=1"></script>
+<script src="/news.js?v=2"></script>
 </body>
 </html>

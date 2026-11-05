@@ -279,6 +279,20 @@ body.kids{background:var(--ground)}
 .parents p{margin:0;color:#3a4a66}
 .kids footer a,.kids footer{color:#6a6880}
 
+/* Peekaboo Meadow: chunky sticker card on the sunny kids page */
+.game.pm{background:radial-gradient(40% 50% at 92% 8%,#ffe27a 0 28%,transparent 29%),linear-gradient(180deg,#d9f2ff 0 58%,#b6e48f 58%);border:4px solid #20304a;box-shadow:0 6px 0 #20304a;color:#20304a}
+.pm .tagline{color:#d94f2b}
+.pm h3{font-family:"Fredoka","Trebuchet MS",system-ui,sans-serif;font-weight:700;color:#20304a}
+.pm h3 span{color:#ff6b4a}
+.pm .lede{color:#20304a}
+.pm .feat li{color:#20304a}
+.pm .feat li::before{background:#ff6b4a;border:2px solid #20304a;width:12px;height:12px;top:.45em}
+.pm .fact{background:#fff;border:2px solid #20304a;color:#20304a}
+.pm .btn.gold{background:#ff6b4a;border:3px solid #20304a;color:#fff;box-shadow:0 4px 0 #20304a;font-family:"Fredoka",system-ui,sans-serif;font-weight:700;font-size:18px}
+.pm .latest{border-color:#ff6b4a;color:#20304a}.pm .latest b{color:#55607a}
+.pm .phone{background:#20304a}
+.change.pm{background:#fff8e6;border:2px solid #20304a;color:#20304a}.change.pm h4{color:#d94f2b}
+body.kids .post{border-width:2px}
 @media (max-width:860px){.doors{grid-template-columns:1fr}.door{min-height:0}.promise{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:1fr}}
 @media (max-width:760px){
   .game{grid-template-columns:1fr;padding:20px}
