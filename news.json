@@ -2,6 +2,22 @@
  {
   "date": "2026-11-05",
   "type": "announcement",
+  "title": "Fairway Tales: play with friends online",
+  "message": "You can now play Fairway Tales with your friends, each on your own phone, wherever you are. Make a room, send the code, and up to four of you play the same nine holes with the same pins and the same wind. Scores update live between holes, and a little pop-up tells you when a friend makes a birdie.",
+  "changes": [
+   {
+    "game": "Fairway Tales",
+    "items": [
+     "Play with friends online: rooms for up to 4 players with live scores",
+     "Fixed a rare freeze that could lock the game after a short backspin shot",
+     "Skyreach best rounds now appear on the online leaderboard"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "type": "announcement",
   "title": "Fairway Tales 1.0: the story is complete!",
   "message": "Fairway Tales has reached version 1.0. Chapter 5 takes you to Skyreach for the Tour Championship: a clifftop course above the clouds, with chasms to carry and the world number one waiting in the final. Win it and the story gets a proper ending.",
   "changes": [
