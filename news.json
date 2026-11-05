@@ -1,6 +1,24 @@
 [
  {
   "date": "2026-11-05",
+  "type": "update",
+  "title": "Python Kitchen 2.1: graduation day",
+  "message": "Python Kitchen has a proper main menu, a one-minute guided tour of your first ticket, a quick recap quiz after each service, and a brand-new graduation project: build a working till that takes orders, catches bad input and prints a receipt. Clear it to become Chef Patron.",
+  "changes": [
+   {
+    "game": "Python Kitchen",
+    "items": [
+     "Main menu with settings, reviews, Ko-fi and install",
+     "Guided first ticket for brand-new coders",
+     "Recap quizzes after every service",
+     "Graduation project: ticket 25, The Pass Is Yours",
+     "Chef's voice is now off by default"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
   "type": "announcement",
   "title": "Fairway Tales: play with friends online",
   "message": "You can now play Fairway Tales with your friends, each on your own phone, wherever you are. Make a room, send the code, and up to four of you play the same nine holes with the same pins and the same wind. Scores update live between holes, and a little pop-up tells you when a friend makes a birdie.",
