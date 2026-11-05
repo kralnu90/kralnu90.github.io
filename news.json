@@ -1,89 +1,106 @@
 [
-  {
-    "date": "2026-11-05",
-    "type": "announcement",
-    "title": "New for kids: Peekaboo Meadow!",
-    "message": "Our first game for little ones is here. A sunny meadow where everything does something when you tap it: animals pop out of the bushes, the sun giggles and clouds rain flowers. A friendly voice asks your little one to find each animal, so no reading is needed and nobody ever loses.",
-    "changes": [
-      {
-        "game": "Peekaboo Meadow",
-        "items": [
-          "Find the bunny, hedgehog, fox, frog and bird to fill the star jar",
-          "Balloon party every five stars",
-          "Press-and-hold grown-ups settings for sounds, voice and the find-it game"
-        ]
-      }
+ {
+  "date": "2026-11-05",
+  "type": "announcement",
+  "title": "Fairway Tales 1.0: the story is complete!",
+  "message": "Fairway Tales has reached version 1.0. Chapter 5 takes you to Skyreach for the Tour Championship: a clifftop course above the clouds, with chasms to carry and the world number one waiting in the final. Win it and the story gets a proper ending.",
+  "changes": [
+   {
+    "game": "Fairway Tales",
+    "items": [
+     "Chapter 5: Skyreach, with 9 new holes, 4 new rivals and 4 new epic clubs",
+     "Club rework: every club starts at 10, and rarity and level boost your fitted parts",
+     "Pick your ball: Distance, Tour, Soft or Heavy",
+     "Friendlier first few minutes, with tips on your first shots and a quick-start guide"
     ]
-  },
-  {
-    "date": "2026-11-05",
-    "type": "announcement",
-    "title": "New game: Garage Code!",
-    "message": "Game number six is the second learn-to-code game, this time set in a car garage. Les the foreman hands you jobs, you write Python to sign them off, and the car on the ramp reacts to every line you write. No experience needed.",
-    "changes": [
-      {
-        "game": "Garage Code",
-        "items": [
-          "10 jobs from print() to functions, with a short manual page for each new idea",
-          "Tyre checks, fault codes and a boss-level MOT day tested on hidden cars",
-          "Make your own jobs and share them with a mate"
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "type": "announcement",
+  "title": "New for kids: Peekaboo Meadow!",
+  "message": "Our first game for little ones is here. A sunny meadow where everything does something when you tap it: animals pop out of the bushes, the sun giggles and clouds rain flowers. A friendly voice asks your little one to find each animal, so no reading is needed and nobody ever loses.",
+  "changes": [
+   {
+    "game": "Peekaboo Meadow",
+    "items": [
+     "Find the bunny, hedgehog, fox, frog and bird to fill the star jar",
+     "Balloon party every five stars",
+     "Press-and-hold grown-ups settings for sounds, voice and the find-it game"
     ]
-  },
-  {
-    "date": "2026-11-04",
-    "type": "announcement",
-    "title": "New game: Python Kitchen!",
-    "message": "Game number five is a bit different: it teaches you to code. Chef Dorran calls the orders from the pass, you write real Python to clear each ticket, and you work your way up from Kitchen Porter to Head Chef. No experience needed.",
-    "changes": [
-      {
-        "game": "Python Kitchen",
-        "items": [
-          "24 tickets across breakfast, lunch, dinner and late service",
-          "Practice station and a full Python cookbook with runnable examples",
-          "Installs to your home screen and plays offline"
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "type": "announcement",
+  "title": "New game: Garage Code!",
+  "message": "Game number six is the second learn-to-code game, this time set in a car garage. Les the foreman hands you jobs, you write Python to sign them off, and the car on the ramp reacts to every line you write. No experience needed.",
+  "changes": [
+   {
+    "game": "Garage Code",
+    "items": [
+     "10 jobs from print() to functions, with a short manual page for each new idea",
+     "Tyre checks, fault codes and a boss-level MOT day tested on hidden cars",
+     "Make your own jobs and share them with a mate"
     ]
-  },
-  {
-    "date": "2026-11-03",
-    "type": "announcement",
-    "title": "New game: Metropolitan Misadventure!",
-    "message": "Game number four is here. A slapstick open-world crime caper where you nick cars, run dodgy jobs for five district contacts and build a criminal empire. Free to play and installable like the others.",
-    "changes": [
-      {
-        "game": "Metropolitan Misadventure",
-        "items": [
-          "Five districts, each with its own contact and story chain",
-          "Jobs, safe houses, businesses and a casino",
-          "Installs to your home screen and plays offline"
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-04",
+  "type": "announcement",
+  "title": "New game: Python Kitchen!",
+  "message": "Game number five is a bit different: it teaches you to code. Chef Dorran calls the orders from the pass, you write real Python to clear each ticket, and you work your way up from Kitchen Porter to Head Chef. No experience needed.",
+  "changes": [
+   {
+    "game": "Python Kitchen",
+    "items": [
+     "24 tickets across breakfast, lunch, dinner and late service",
+     "Practice station and a full Python cookbook with runnable examples",
+     "Installs to your home screen and plays offline"
     ]
-  },
-  {
-    "date": "2026-11-01",
-    "type": "announcement",
-    "title": "Introducing the public leaderboards!",
-    "message": "Both games now have online leaderboards, so you can see how you stack up against everyone else.",
-    "changes": [
-      {
-        "game": "Tight Lines",
-        "items": [
-          "New public leaderboard: who caught what",
-          "Catches show fish size and star rating"
-        ]
-      },
-      {
-        "game": "Fairway Tales",
-        "items": [
-          "New daily challenge leaderboard",
-          "Best round on each course",
-          "Holes-in-one hall of fame"
-        ]
-      }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-03",
+  "type": "announcement",
+  "title": "New game: Metropolitan Misadventure!",
+  "message": "Game number four is here. A slapstick open-world crime caper where you nick cars, run dodgy jobs for five district contacts and build a criminal empire. Free to play and installable like the others.",
+  "changes": [
+   {
+    "game": "Metropolitan Misadventure",
+    "items": [
+     "Five districts, each with its own contact and story chain",
+     "Jobs, safe houses, businesses and a casino",
+     "Installs to your home screen and plays offline"
     ]
-  }
+   }
+  ]
+ },
+ {
+  "date": "2026-11-01",
+  "type": "announcement",
+  "title": "Introducing the public leaderboards!",
+  "message": "Both games now have online leaderboards, so you can see how you stack up against everyone else.",
+  "changes": [
+   {
+    "game": "Tight Lines",
+    "items": [
+     "New public leaderboard: who caught what",
+     "Catches show fish size and star rating"
+    ]
+   },
+   {
+    "game": "Fairway Tales",
+    "items": [
+     "New daily challenge leaderboard",
+     "Best round on each course",
+     "Holes-in-one hall of fame"
+    ]
+   }
+  ]
+ }
 ]
