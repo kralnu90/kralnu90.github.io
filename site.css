@@ -224,6 +224,10 @@ section{padding-block:48px 8px}
 footer{padding-block:34px 40px;color:var(--mist);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;border-top:1px solid var(--line);margin-top:48px}
 footer a{color:var(--mist)}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 14px}
+/* hit counter: old-school odometer under the footer */
+.hits{margin:-24px 0 28px;text-align:center;color:var(--mist);font-size:13px;letter-spacing:.02em}
+.odo{display:inline-flex;gap:2px;margin-left:6px;vertical-align:middle}
+.odo b{display:inline-block;min-width:1.25em;padding:2px 0;border-radius:4px;background:var(--turf);border:1px solid var(--line);color:var(--flag);font:700 14px/1.2 ui-monospace,"Courier New",monospace;text-align:center}
 
 /* PLAY: games room after dark. A skyline on one side, rolling water on the other. */
 .play-hero{background:radial-gradient(70% 90% at 80% 0%,rgba(255,93,115,.18),transparent 60%),radial-gradient(60% 80% at 10% 10%,rgba(255,179,71,.14),transparent 60%),linear-gradient(180deg,#221a35,var(--ground))}
