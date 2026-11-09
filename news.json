@@ -1,5 +1,39 @@
 [
  {
+  "date": "2026-11-09",
+  "type": "update",
+  "title": "Solaris Gambit Update 4: Water & Thunder",
+  "message": "The third chapter rolls in off the coast. Vael Stormcrow whips up the storms and Mother Nerissa has spent thirty years calming the seas he churns. Beat Lady Corvina to meet them, then collect all 15 cards to raise the Maelstrom Leviathan.",
+  "changes": [
+   {
+    "game": "Solaris Gambit",
+    "items": [
+     "Two new rivals: Vael Stormcrow and Mother Nerissa",
+     "15 new Water & Thunder cards and their own pack in the shop",
+     "Maelstrom Leviathan legend for completing the set",
+     "Calm and Storm achievement"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "type": "update",
+  "title": "Solaris Gambit Update 3: Shadow & Holy",
+  "message": "A new chapter about two old allies turned enemies. Sir Caedric the Fallen broke his oath to the cathedral, and Oracle Seraphine has never forgiven him. Beat Sel & Nara to unlock it, and collect all 15 cards to earn the Eclipse Seraph.",
+  "changes": [
+   {
+    "game": "Solaris Gambit",
+    "items": [
+     "Two new rivals: Sir Caedric the Fallen and Oracle Seraphine",
+     "15 new Shadow & Holy cards and their own pack in the shop",
+     "Eclipse Seraph legend for completing the set",
+     "Light and Shade achievement, and chapter cards in Gauntlet drafts"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-05",
   "type": "update",
   "title": "Python Kitchen 2.2: your pass, your specials",
