@@ -2,6 +2,23 @@
  {
   "date": "2026-11-10",
   "type": "announcement",
+  "title": "New on the workbench: 30 × to Remember",
+  "message": "There's a new page on the hub for games that are still being built, and the first one is 30 × to Remember. A wizard's spell went wrong and left Aetherfall stuck in time. You remember every loop. Nobody else does. It's an early build, so things will change, but it's fully playable and every review goes straight to me.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "Every action costs time, and beating enemies wins it back",
+     "The loop always resets: your levels stay, and only soulbound gear survives",
+     "Pixel-art battles with one sprite per class, coloured for each companion",
+     "Lose a companion and they might come back as a stranger who doesn't remember you"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "type": "announcement",
   "title": "New game: Python Quest!",
   "message": "Part three of the Python trilogy is here. Python Kitchen teaches you to write code, Garage Code teaches you to fix it, and Python Quest teaches you to build something real with it. A half-finished JRPG is stuck in an old cartridge, and every quest builds one piece of it. Finish all 20 and the game you built becomes Ember Crown, a mini JRPG you can play, running on your own code.",
   "changes": [
