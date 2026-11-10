@@ -2,7 +2,7 @@
    <section id="news" data-games="Tight Lines|Fairway Tales"> shows only posts about those games.
    Leave data-games off to show everything. Game cards with <div class="latest" data-game="..."> get a "Latest update" line. */
 (function(){
-  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk","Garage Code":"gc","Peekaboo Meadow":"pm"};
+  var GAME_CLASS = {"Fairway Tales":"ft","Solaris Gambit":"sg","Tight Lines":"tl","Metropolitan Misadventure":"mm","Python Kitchen":"pk","Garage Code":"gc","Python Quest":"pq","Peekaboo Meadow":"pm"};
   var section = document.getElementById("news");
   var filter = section && section.getAttribute("data-games") ? section.getAttribute("data-games").split("|") : null;
   var SHOW = section && section.getAttribute("data-show") ? +section.getAttribute("data-show") : 3;

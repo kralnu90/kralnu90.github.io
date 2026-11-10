@@ -1,6 +1,23 @@
 [
  {
   "date": "2026-11-10",
+  "type": "announcement",
+  "title": "New game: Python Quest!",
+  "message": "Part three of the Python trilogy is here. Python Kitchen teaches you to write code, Garage Code teaches you to fix it, and Python Quest teaches you to build something real with it. A half-finished JRPG is stuck in an old cartridge, and every quest builds one piece of it. Finish all 20 and the game you built becomes Ember Crown, a mini JRPG you can play, running on your own code.",
+  "changes": [
+   {
+    "game": "Python Quest",
+    "items": [
+     "20 quests in four acts: the party, the battle system, loot and saves, and the dungeon",
+     "Classes, inheritance, custom exceptions, testing, json saves and recursion",
+     "Retro pixel art, and Bit the cartridge fairy explaining every error",
+     "Bonus: Ember Crown, a mini JRPG powered by the code you wrote"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-10",
   "type": "update",
   "title": "Garage Code 2.0: the sequel to Python Kitchen",
   "message": "Garage Code has been rebuilt as the next step after Python Kitchen. In the kitchen you learn to write Python. In the garage you learn to fix it. Every car rolls in with a broken program, and Les wants it signed off. It now runs real Python 3, so you learn to read the same error messages real programmers see.",
