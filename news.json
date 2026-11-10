@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-11-10",
+  "type": "update",
+  "title": "Solaris Gambit Update 5: Earth & Wind",
+  "message": "The last two elements are here. Gorran Deepdelve has lived inside the same mountain for forty years, and sky-pirate Kestrel Vane has spent most of them raiding it. Beat the Hexbound Stranger to meet them, then collect all 15 cards to raise the Skyroot Colossus. We've also made saves safer and moved the Gauntlet to unlock after all eight rivals.",
+  "changes": [
+   {
+    "game": "Solaris Gambit",
+    "items": [
+     "Two new rivals: Gorran Deepdelve and Kestrel Vane",
+     "15 new Earth & Wind cards and their own pack in the shop",
+     "Skyroot Colossus legend and Stone and Sky achievement",
+     "Safer saves: a backup copy restores your progress if it goes missing",
+     "Chapter legends stay a mystery until you beat both rivals"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-09",
   "type": "update",
   "title": "Solaris Gambit Update 4: Water & Thunder",
