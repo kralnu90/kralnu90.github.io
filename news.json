@@ -2,6 +2,23 @@
  {
   "date": "2026-11-10",
   "type": "update",
+  "title": "Garage Code 2.0: the sequel to Python Kitchen",
+  "message": "Garage Code has been rebuilt as the next step after Python Kitchen. In the kitchen you learn to write Python. In the garage you learn to fix it. Every car rolls in with a broken program, and Les wants it signed off. It now runs real Python 3, so you learn to read the same error messages real programmers see.",
+  "changes": [
+   {
+    "game": "Garage Code",
+    "items": [
+     "20 brand-new jobs across four bays, all about finding and fixing bugs",
+     "Bugs that crash and bugs that don't: off-by-one, runaway loops, the 'or' trap and more",
+     "New ideas Kitchen doesn't cover: sorting, sets, list comprehensions, classes and files",
+     "A three-fault boss job on MOT day"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "type": "update",
   "title": "Peekaboo Meadow: the big update",
   "message": "Peekaboo Meadow has grown. There's a softer new look, two new places to visit with ten new animals, a colouring room, and a gentle bedtime wind-down: the sun sets, the moon comes out and every animal says goodnight before falling asleep. Lovely for the last game before bed.",
   "changes": [
