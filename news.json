@@ -2,12 +2,13 @@
  {
   "date": "2026-11-12",
   "type": "update",
-  "title": "30 × to Remember 0.6.4: a new look, inside and out",
-  "message": "The hamlet and the dungeon have both been redrawn in detailed pixel art. Every room is now a torch-lit chamber with real doors, floors that change with the era, and a centrepiece for each place. The wizard, the tavern keeper, the shopkeeper and every companion you hire now talk from their own portrait too. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
+  "title": "30 × to Remember 0.6.5: a new look, inside and out",
+  "message": "The hamlet, the dungeon and the battles have all been redrawn in detailed, lamplit pixel art. Every room is a torch-lit chamber with real doors, and every fight now plays out in front of the place you're standing in. The wizard, the tavern keeper, the shopkeeper and every companion you hire also talk from their own portrait. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
   "changes": [
    {
     "game": "30 × to Remember",
     "items": [
+     "0.6.5: new lit battle backdrops for every room: moonlit streets in the present, overgrown ruins in the future, ghostly blue in Distant Echoes",
      "0.6.4: dungeon rooms redrawn as torch-lit pixel-art chambers with real doors, era floors and a centrepiece for each place",
      "0.6.3: the hamlet map redrawn at night in detailed pixel art, with frozen chimney smoke, fountain spray and a floating apple",
      "0.6.2: the shopkeeper gets a talking portrait too",
