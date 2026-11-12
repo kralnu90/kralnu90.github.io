@@ -2,6 +2,21 @@
  {
   "date": "2026-11-12",
   "type": "update",
+  "title": "30 × to Remember 0.6.1: talking portraits",
+  "message": "The wizard, the tavern keeper and every companion you hire now talk to you from their own pixel-art portrait, mouths moving as they speak. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "0.6.1: talking pixel-art portraits for the wizard, the tavern keeper and all eight companion classes",
+     "0.6.1: portraits for the hero, speaking enemies and the final bosses are ready for the story"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-12",
+  "type": "update",
   "title": "30 × to Remember 0.6: the bestiary arrives",
   "message": "Six updates since 30 × to Remember landed on the workbench, and the latest fills the dungeon with new creatures. Every one of them has its own trick, and the tougher ones only turn up as the loops go on. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
   "changes": [
