@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-12",
+  "type": "update",
+  "title": "30 × to Remember 0.6: the bestiary arrives",
+  "message": "Six updates since 30 × to Remember landed on the workbench, and the latest fills the dungeon with new creatures. Every one of them has its own trick, and the tougher ones only turn up as the loops go on. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "0.6: 16 new creatures across six families, each with its own trick: charging boars, poisonous spiders, mites that steal seconds off your clock, and more",
+     "0.6: Elite rooms now roll Elite, Champion or Dread enemies with modifiers like Brutal, Volatile and Chrono-Locked",
+     "0.5: the hero's skill tree, a spider's web of six disciplines with 60 nodes and 6 hybrid keystones",
+     "0.4: gold that carries between loops, a General Store, selling, binding gear and the Wizard's Sanctum",
+     "0.3: the Cleric reworked with a Lily gauge, and healing that grows with your gear",
+     "0.2: dice rolls replaced with Diablo-style stats: armour, crits and dodge"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-10",
   "type": "announcement",
   "title": "New on the workbench: 30 × to Remember",
