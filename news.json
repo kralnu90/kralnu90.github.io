@@ -2,7 +2,7 @@
  {
   "date": "2026-11-12",
   "type": "update",
-  "title": "30 × to Remember 0.7: the Nemesis",
+  "title": "30 × to Remember 0.7.1: the Nemesis, and new portraits",
   "message": "The creature that kills a companion now keeps their true name. Bring them back as a stranger, help them remember, and a red Nemesis door will appear. Beat what's behind it to give them their name back. Lose three times and it gives the name back cursed. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
   "changes": [
    {
@@ -10,7 +10,8 @@
     "items": [
      "0.7: Nemesis doors: the creature that killed a companion waits where they fell, and holds their true name",
      "0.7: win to restore every stranger it holds; lose three times and they come back Unworthy, weakened forever",
-     "0.7: a full party wipe leaves one creature holding every lost name"
+     "0.7: a full party wipe leaves one creature holding every lost name",
+     "0.7.1: new detailed portraits for every character who speaks"
     ]
    }
   ]
