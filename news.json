@@ -2,6 +2,23 @@
  {
   "date": "2026-11-13",
   "type": "update",
+  "title": "30 × to Remember 0.9.0: the end of the loop",
+  "message": "30 × to Remember now has an ending. After the four milestone bosses, fate sends two reflections after you: the Hollow Champion, the you that died that day, and then the Last Rememberer, who knows every loop you've lived. Beat him to free Bleakthorpe, then take on New Game+.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "The Hollow Champion copies your build and your moves, and counters anything you repeat",
+     "The Last Rememberer turns your whole history against you",
+     "An ending, credits, and New Game+ with tougher enemies",
+     "Two new Legendaries: the Champion's Soul and the Final Memory"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "type": "update",
   "title": "30 × to Remember 0.8.0: the milestone bosses",
   "message": "From loop 5, a door that shouldn't be there appears once you've survived 20 minutes. Behind it waits the Forgotten King. Beat him to go deeper, and the Clockwork Sovereign, the Maw Beneath and the Paradox Regent follow. Each one fights differently, and each drops Legendary gear that binds to your hero for good.",
   "changes": [
