@@ -2,6 +2,22 @@
  {
   "date": "2026-11-13",
   "type": "update",
+  "title": "30 × to Remember 0.7.7: a guided tour of the hamlet",
+  "message": "New to Bleakthorpe? A quick tour now shows you around the hamlet the first time you arrive, pointing out every building and button. The hamlet screen is now just the map. You can replay the tour from Settings.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "First-visit tour of the hamlet, highlighting each place and button",
+     "Replay the tour any time from Settings",
+     "Cleaner hamlet screen: credits moved into Settings"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "type": "update",
   "title": "30 × to Remember 0.7.6: a cleaner hamlet",
   "message": "The hamlet screen is all map now. Menu, Party, Skills and the Dungeon are round buttons along the edges, and small gold sparkles mark each place. Press and hold the map to see every place name. Tap Party to see your team's levels and stats.",
   "changes": [
