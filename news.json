@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-13",
+  "type": "update",
+  "title": "30 × to Remember 0.7.5: a new hamlet",
+  "message": "The hamlet has a whole new look, hand-painted, and it's alive now: the rift swirls, embers drift up from the campfire, smoke curls from the chimneys and fireflies wander the trees. Keep an eye on it. Every so often, time stutters. If you're still on an old version, tap \"Get the latest version\" on the main menu.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "0.7.3: difficulty and class balance pass",
+     "0.7.4: new rare gear suffix \"of Renewal\" heals a little each turn",
+     "0.7.5: new painted hamlet map with animated effects",
+     "0.7.5: every so often the hamlet freezes for a moment as the loop hiccups"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-12",
   "type": "update",
   "title": "30 × to Remember 0.7.2: the Nemesis, new portraits and a new-look hero",
