@@ -2,6 +2,21 @@
  {
   "date": "2026-11-13",
   "type": "update",
+  "title": "30 × to Remember 0.7.8: welcome to Bleakthorpe",
+  "message": "The village finally wears its name: the hamlet screen is now Bleakthorpe. The full painting is back too, with the forest and the road south lit by fireflies.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "The hamlet is now called Bleakthorpe on screen",
+     "The full village painting is back, with the southern forest and road"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "type": "update",
   "title": "30 × to Remember 0.7.7: a guided tour of the hamlet",
   "message": "New to Bleakthorpe? A quick tour now shows you around the hamlet the first time you arrive, pointing out every building and button. The hamlet screen is now just the map. You can replay the tour from Settings.",
   "changes": [
