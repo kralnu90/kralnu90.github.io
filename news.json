@@ -2,6 +2,22 @@
  {
   "date": "2026-11-13",
   "type": "update",
+  "title": "30 × to Remember 0.8.0: the milestone bosses",
+  "message": "From loop 5, a door that shouldn't be there appears once you've survived 20 minutes. Behind it waits the Forgotten King. Beat him to go deeper, and the Clockwork Sovereign, the Maw Beneath and the Paradox Regent follow. Each one fights differently, and each drops Legendary gear that binds to your hero for good.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "Four milestone bosses at loops 5, 10, 15 and 20, each with its own tricks",
+     "Beat each boss to go deeper: until it falls, newer creatures stay away",
+     "New Legendary gear: the King's Signet, Sovereign Gear, Abyssal Heart and Paradox Crown"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "type": "update",
   "title": "30 × to Remember 0.7.9: one street, three times",
   "message": "Battles now play out on hand-painted scenes of the same Bleakthorpe street, as it was, as it is, and as it will be. Look closely at the past and present: the differences are small, but they're there. The future isn't subtle at all.",
   "changes": [
