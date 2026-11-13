@@ -2,6 +2,22 @@
  {
   "date": "2026-11-13",
   "type": "update",
+  "title": "30 × to Remember 0.7.9: one street, three times",
+  "message": "Battles now play out on hand-painted scenes of the same Bleakthorpe street, as it was, as it is, and as it will be. Look closely at the past and present: the differences are small, but they're there. The future isn't subtle at all.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "New painted battle scenes for the past, present and future",
+     "Glowing lamps and windows, and fireflies over the ruins of the future",
+     "Distant Echo rooms and the Chapel take you back to the past"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "type": "update",
   "title": "30 × to Remember 0.7.8: welcome to Bleakthorpe",
   "message": "The village finally wears its name: the hamlet screen is now Bleakthorpe. The full painting is back too, with the forest and the road south lit by fireflies.",
   "changes": [
