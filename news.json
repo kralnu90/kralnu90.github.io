@@ -2,6 +2,21 @@
  {
   "date": "2026-11-14",
   "type": "update",
+  "title": "30 × to Remember 0.11.0: bounties",
+  "message": "The Notice Board now posts three bounties every loop. Hunt certain creatures, take down elites, find caches or survive the whole run, and collect gold, crystals and sometimes gear when you get back.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "Three fresh bounties on the Notice Board every loop",
+     "Rewards of gold, crystals and sometimes gear, paid when the loop resets"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-14",
+  "type": "update",
   "title": "30 × to Remember 0.10.0: rebuild Bleakthorpe",
   "message": "Bleakthorpe can grow now. Spend crystals and gold at the new Notice Board on buildings the loop can't undo, starting with the old forge. Once it's rebuilt, the smith can temper your soulbound gear up to your level, reroll its affixes and raise its rarity.",
   "changes": [
