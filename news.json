@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-14",
+  "type": "update",
+  "title": "30 × to Remember 0.10.0: rebuild Bleakthorpe",
+  "message": "Bleakthorpe can grow now. Spend crystals and gold at the new Notice Board on buildings the loop can't undo, starting with the old forge. Once it's rebuilt, the smith can temper your soulbound gear up to your level, reroll its affixes and raise its rarity.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "New Notice Board: five village projects that survive every reset",
+     "The Smithy: temper, reroll and upgrade your gear",
+     "A bigger tavern, a training yard, an apothecary and a watchtower"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-13",
   "type": "update",
   "title": "30 × to Remember 0.9.0: the end of the loop",
