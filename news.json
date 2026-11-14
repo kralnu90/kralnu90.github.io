@@ -2,6 +2,22 @@
  {
   "date": "2026-11-14",
   "type": "update",
+  "title": "30 × to Remember 0.12.0: the weekly bounty",
+  "message": "A new weekly bounty goes up on the Notice Board every Monday. It's a big one, counted across every run you play that week, and it pays a guaranteed soulbound Rare or Epic.",
+  "changes": [
+   {
+    "game": "30 × to Remember",
+    "items": [
+     "A weekly bounty that resets every Monday",
+     "Progress counts across all your runs that week",
+     "Guaranteed soulbound Rare or Epic reward"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-14",
+  "type": "update",
   "title": "30 × to Remember 0.11.0: bounties",
   "message": "The Notice Board now posts three bounties every loop. Hunt certain creatures, take down elites, find caches or survive the whole run, and collect gold, crystals and sometimes gear when you get back.",
   "changes": [
