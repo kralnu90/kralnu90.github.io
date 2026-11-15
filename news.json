@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-11-15",
+  "type": "update",
+  "title": "Tight Lines 0.26: an Android app, motion controls, four towns and a campervan",
+  "message": "Tight Lines has grown a lot since the leaderboard went live. There's now a free Android app to download, motion controls on phones that support them, a full trading region with four towns, and a campervan to save up for.",
+  "changes": [
+   {
+    "game": "Tight Lines",
+    "items": [
+     "Android app (test build): download the APK from the games room. It always loads the latest version",
+     "Motion controls on phones that support them: tilt to steer the rod in a fight, and flick the phone to cast",
+     "Four towns: Willowmere, Thornmere and Saltwick, which each pay best for a different kind of fish, and the city of Kingsbridge",
+     "Request boards, town reputation, newspapers, gossip, festivals and seasonal prices",
+     "Hunting, foraging, deeper cooking with 19 recipes, and dice-roll events on the road",
+     "Injuries, four difficulty levels and tougher fish fights",
+     "Keep net slots, tavern lockers, and a van or campervan from Kingsbridge Motors",
+     "A little drive scene every time you travel"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-14",
   "type": "update",
   "title": "30 × to Remember 0.12.0: the weekly bounty",
