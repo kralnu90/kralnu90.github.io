@@ -2,6 +2,24 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.2.0: the Colosseum",
+  "message": "Crystal Circuit has a Colosseum for practice fights. Build any hero you like, pick a foe and fight. No rewards and no risk to your saved heroes, just a best time to beat.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Pick any class, level, weapon, armour and gems for a practice fight",
+     "Fight any group, boss or single enemy, at any enemy level you choose",
+     "Choose the arena region and the difficulty",
+     "Nothing touches your saved heroes, and your best clear time against each foe is kept",
+     "A results card after every fight, and a Leave button to quit early"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.1.0: a proper main menu",
   "message": "Crystal Circuit now opens on a main menu of glowing gem buttons, and the same gem pads run the menu during a match, so everything looks and works the same wherever you are.",
   "changes": [
