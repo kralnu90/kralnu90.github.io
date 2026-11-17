@@ -1,5 +1,25 @@
 [
  {
+  "date": "2026-11-17",
+  "type": "announcement",
+  "title": "New on the workbench: Crystal Circuit",
+  "message": "A board game and an action RPG in one. Race three AI rivals round the board for 30 rounds, fight in real time whenever the Fate Die calls for it, and play cards to get ahead. Early build, free, and playable on your phone.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Roll 2d6 to move; a 12-sided Fate Die decides what each tile holds",
+     "Real-time fights with guard, dodge, perfect guards, class skills and spells",
+     "Six classes and a roster of heroes, each with their own gear and deck",
+     "27 cards: hostile cards, hidden traps, Ward and Mirror, Pass the Buck",
+     "Rivals with their own decks who hold grudges",
+     "Bosses on rounds 10, 20 and 30, and podium prizes for distance and damage",
+     "Merchants with a fresh stock every visit, and weapons and armour with gem sockets"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-15",
   "type": "update",
   "title": "Tight Lines 0.26: an Android app, motion controls, four towns and a campervan",

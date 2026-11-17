@@ -419,3 +419,15 @@ body.wip{--ground:#16141d;--turf:#211e2b;--line:#3a3547;--chalk:#ece3cc;--mist:#
 @media (prefers-reduced-motion:reduce){.qp{transition:none}}
 
 .ctas-note{margin:10px 0 0;font-size:13px;line-height:1.45;color:rgba(238,243,228,.72);max-width:52ch}
+
+/* Crystal Circuit (WIP) */
+.game.cc{background:radial-gradient(70% 90% at 100% 0%,rgba(111,211,255,.14),transparent 60%),linear-gradient(150deg,#22348a,#0b1040 70%);border-color:#3a4fb5;color:#eef1ff}
+.cc .tagline{color:#6fd3ff}
+.cc h3 span{color:#e0b03a}
+.cc .feat li{color:#eef1ff}
+.cc .feat li::before{background:#6fd3ff;transform:rotate(45deg);width:8px;height:8px;border-radius:1px}
+.cc .fact{background:rgba(0,0,0,.3);border-color:#3a4fb5;color:#eef1ff}
+.cc .btn.gold{background:#e0b03a;border-color:#e0b03a;color:#1a1200}
+.cc .latest{border-left-color:#6fd3ff;color:#cfd6ff}
+.change.cc{background:linear-gradient(150deg,rgba(34,52,138,.92),rgba(11,16,64,.92))} .change.cc h4{color:#6fd3ff}
+.qp.cc{--qa:#22348a;--qb:#0b1040;--qc:#6fd3ff}
