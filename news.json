@@ -2,6 +2,24 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.3.0: Colosseum Cups",
+  "message": "The Colosseum now has cup tournaments for your real hero. Win round after round, then cash out or push on for the cup, with cards, gems and gil to take into your next circuit.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Bronze, Silver and Crystal Cups, each ending with a boss",
+     "After every win: take the purse and leave, or risk it for the next round",
+     "Earn tickets by finishing circuits and topping podiums",
+     "HP carries between rounds and used potions are gone for good",
+     "Cup prizes include new cards for your deck, gems and rare finds"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.2.0: the Colosseum",
   "message": "Crystal Circuit has a Colosseum for practice fights. Build any hero you like, pick a foe and fight. No rewards and no risk to your saved heroes, just a best time to beat.",
   "changes": [
