@@ -2,6 +2,22 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.5.1: Ranger rebalance",
+  "message": "Playtesting showed the Ranger was a little too strong, so it's been toned down. Keep your distance: arrows now lose power at point-blank range.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Ranger arrows hit a little softer",
+     "Arrows fired at point-blank range lose power, so keep your distance",
+     "Volley is now a crowd skill rather than a single-target nuke"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.5.0: choose how fierce your rivals are",
   "message": "New to Crystal Circuit? Set your rivals to Calm and learn the ropes. Want a real fight? Go Ruthless. Top-tier gear is now something to work towards, too.",
   "changes": [
