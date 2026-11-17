@@ -2,6 +2,24 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.0.0: the Fantasy Crystals overhaul",
+  "message": "Crystal Circuit has a brand new look: a board of cut gems floating in a cosmic void, glass crystal pieces, a frosted glass top bar and a hand of full-art tarot cards. Playing cards feels new too: tap a hostile card, then tap the rival you want to hit.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "A cosmic void board with a nebula, a crystal grid and a round sigil that pulses on boss rounds",
+     "Gem tiles in ruby, sapphire, citrine and emerald, linked by a glowing circuit",
+     "Glass crystal pieces with light trails, a warp beam and status effects you can see at a glance",
+     "A frosted glass top bar with a class portrait, a Limit ring and gil that rolls up",
+     "Full-art tarot cards: tap to read, tap a rival on the board to target, watch it fly and shatter"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 0.9.0: the graphical overhaul",
   "message": "Crystal Circuit has had a full makeover. The board, the arenas, your hero and every enemy have been redrawn, with weather, glowing effects and proper game pieces.",
   "changes": [
