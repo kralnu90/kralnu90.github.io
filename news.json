@@ -2,6 +2,23 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.5.0: choose how fierce your rivals are",
+  "message": "New to Crystal Circuit? Set your rivals to Calm and learn the ropes. Want a real fight? Go Ruthless. Top-tier gear is now something to work towards, too.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Calm, Normal and Ruthless rival settings for every circuit",
+     "Merchants only sell gear up to your level, with higher tiers shown so you know what's coming",
+     "Top-tier weapons and armour cost a lot more, so they're a goal across several circuits",
+     "Fixed the update notice repeating after updating"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.4.0: the Gauntlet and crafting",
   "message": "Take on the Gauntlet: ten duels against heroes of every other class, each with an objective to complete. Bank class essences, then craft your class's signature item.",
   "changes": [
