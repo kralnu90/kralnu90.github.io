@@ -1,6 +1,24 @@
 [
  {
   "date": "2026-11-17",
+  "type": "update",
+  "title": "Crystal Circuit 0.9.0: the graphical overhaul",
+  "message": "Crystal Circuit has had a full makeover. The board, the arenas, your hero and every enemy have been redrawn, with weather, glowing effects and proper game pieces.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Raised stone board tiles, a glowing circuit path and game pieces for you and your rivals",
+     "Flagstone arenas for each region with live weather: embers, snow, rain and lightning, drifting leaves",
+     "Your hero now carries their class weapon: sword, fists, staff, bow, lance, or mace and shield",
+     "New enemy designs, from slimes and flame wisps to horned brutes and glowing bosses",
+     "Glowing slash and spell trails, and cards in your hand that look like cards"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
   "type": "announcement",
   "title": "New on the workbench: Crystal Circuit",
   "message": "A board game and an action RPG in one. Race three AI rivals round the board for 30 rounds, fight in real time whenever the Fate Die calls for it, and play cards to get ahead. Early build, free, and playable on your phone.",
