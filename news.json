@@ -2,6 +2,24 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.1.0: a proper main menu",
+  "message": "Crystal Circuit now opens on a main menu of glowing gem buttons, and the same gem pads run the menu during a match, so everything looks and works the same wherever you are.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "A main menu of gem-icon buttons, each opening its own page",
+     "Board picker with a mini map of every board's shape",
+     "A Heroes page for switching between heroes or making a new one",
+     "The in-game menu is now a hub of the same gem pads, with a back arrow on every page",
+     "Shop and Forge sit at the top of the hub at merchants, so you can change gear there too"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.0.0: the Fantasy Crystals overhaul",
   "message": "Crystal Circuit has a brand new look: a board of cut gems floating in a cosmic void, glass crystal pieces, a frosted glass top bar and a hand of full-art tarot cards. Playing cards feels new too: tap a hostile card, then tap the rival you want to hit.",
   "changes": [
