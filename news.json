@@ -2,6 +2,22 @@
  {
   "date": "2026-11-17",
   "type": "update",
+  "title": "Crystal Circuit 1.6.0: pixel-art heroes",
+  "message": "All six classes now have hand-picked pixel-art sprites in battle, so your hero and your Gauntlet opponents finally look the part.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "New pixel-art sprites for the Warrior, Monk, Mage, Ranger, Lancer and Guardian",
+     "Front, back and side views with walking, attack, hurt and skill animations",
+     "Gauntlet opponents use the new sprites, so every class is easy to spot"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "type": "update",
   "title": "Crystal Circuit 1.5.1: Ranger rebalance",
   "message": "Playtesting showed the Ranger was a little too strong, so it's been toned down. Keep your distance: arrows now lose power at point-blank range.",
   "changes": [
