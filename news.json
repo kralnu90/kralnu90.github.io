@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-18",
+  "type": "update",
+  "title": "Crystal Circuit 1.7.0: Story mode",
+  "message": "Crystal Circuit has a story. Enter Varek Voss's Emberglass Circuit in place of your sick older brother, guided by the pages of his battered journal.",
+  "changes": [
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "The Prologue, Felix's Journal: eight short chapters that teach the game one system at a time",
+     "Meet Garrick Vale the smith, and Sable Rook, your first rival",
+     "New story foes: the Lock Warden and Mire Shells",
+     "Replay any chapter, reread the journal, or skip ahead and keep the starter rewards"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-17",
   "type": "update",
   "title": "Crystal Circuit 1.6.0: pixel-art heroes",
