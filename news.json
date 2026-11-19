@@ -2,6 +2,21 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.5.0: stones and springs",
+  "message": "Two more tables: the ancient game of Go, and a steady-hand tray game inspired by a classic wooden toy.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Go on 9×9, 13×13 or 19×19, against the AI or pass and play",
+     "Spring Mikado: draw discs out of a spring-loaded tray without making the others jump"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.4.0: a fuller parlour",
   "message": "Nine more classics take the parlour to twenty-nine tables.",
   "changes": [
