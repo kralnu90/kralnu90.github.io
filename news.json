@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.7.0: Conjurers' Duel",
+  "message": "A full collectible-style card duel joins the Cards shelf, bringing the Compendium to 36 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Conjurers' Duel: 100 original cards across five colours of magic",
+     "Duel the AI, play a friend with Pass & Play, or beat five opponents in the Gauntlet, the Archmage included",
+     "Draft mode: pick from three packs, build a deck, then play three duels",
+     "Deckbuilder: make and save up to 8 decks of your own"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.6.1: Fill-Ins",
   "message": "One more for the puzzle page, bringing the Compendium to 35 games.",
   "changes": [
