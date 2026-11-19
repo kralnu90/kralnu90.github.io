@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.8.2: Three Card Poker",
+  "message": "A new table in the Casino, bringing the Compendium to 45 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Three Card Poker: Ante, Play and Pair Plus against a dealer who needs Queen high",
+     "Ante bonus for straights and better, plus a play-or-fold strategy hint",
+     "Your bets stay on the table between hands"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.8.1: Blackjack fix",
   "message": "A quick fix for the casino.",
   "changes": [
