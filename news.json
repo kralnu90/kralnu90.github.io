@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.7.1: Knucklebones",
+  "message": "The bone-dice duel joins the Dice & Tiles shelf, bringing the Compendium to 37 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Knucklebones: roll, pick a column, and knock out your rival's matching dice",
+     "Matching dice in a column multiply, so three of a kind scores big",
+     "Play the AI or pass the phone to a friend"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.7.0: Conjurers' Duel",
   "message": "A full collectible-style card duel joins the Cards shelf, bringing the Compendium to 36 games.",
   "changes": [
