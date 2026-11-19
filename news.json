@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.2.0: family game night",
+  "message": "Five new tables in the parlour, with room for up to six players in any mix of people and AI.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Snakes & Ladders, Ludo and Dominoes",
+     "Murder at Marrowgate Manor: an original whodunit with a detective notebook",
+     "Torchlight Delve: an original dungeon crawl for a party of 1 to 4 heroes",
+     "A pass-the-phone screen keeps cards and tiles secret between players"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.1.0: pass and play",
   "message": "Every board game in the Compendium can now be played by two people on one phone, and your games save as you go.",
   "changes": [
