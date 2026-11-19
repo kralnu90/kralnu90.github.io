@@ -1,6 +1,23 @@
 [
  {
   "date": "2026-11-19",
+  "type": "update",
+  "title": "Grand Tabletop Compendium 1.1.0: pass and play",
+  "message": "Every board game in the Compendium can now be played by two people on one phone, and your games save as you go.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Pass and play for Shogi, Checkers and Backgammon (Chess and Mancala already had it)",
+     "Your game saves automatically: pick it back up with Continue",
+     "Sound effects and a soft music-box tune, with volume sliders",
+     "A tidier main menu, and Settings one tap away in every game"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
   "type": "announcement",
   "title": "New game: The Grand Tabletop Compendium",
   "message": "A candlelit parlour with ten games at one table: royal strategy, tumbling dice, quiet patience and two dungeon-crawling card games. Free, no ads, and it works offline once installed.",
