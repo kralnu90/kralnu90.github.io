@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.6.1: Fill-Ins",
+  "message": "One more for the puzzle page, bringing the Compendium to 35 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Fill-Ins: no clues, just a list of numbers sorted by length. Work out where each one fits in the grid",
+     "A Words version too, with a daily puzzle for both",
+     "Every puzzle is checked to have exactly one answer"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.6.0: the puzzle page",
   "message": "Three puzzle-page favourites join the Words & Puzzles shelf, bringing the Compendium to 34 games.",
   "changes": [
