@@ -431,3 +431,13 @@ body.wip{--ground:#16141d;--turf:#211e2b;--line:#3a3547;--chalk:#ece3cc;--mist:#
 .cc .latest{border-left-color:#6fd3ff;color:#cfd6ff}
 .change.cc{background:linear-gradient(150deg,rgba(34,52,138,.92),rgba(11,16,64,.92))} .change.cc h4{color:#6fd3ff}
 .qp.cc{--qa:#22348a;--qb:#0b1040;--qc:#6fd3ff}
+
+.game.gc{background:radial-gradient(90% 120% at 100% 0%,rgba(212,175,55,.16),transparent 60%),linear-gradient(150deg,#3a2316,#160d08 70%);border-color:#5a3a26}
+.gc .tagline{color:#d4af37}
+.gc h3{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:.03em;color:#f3d266}
+.gc h3 span{color:#fbf7ee}
+.gc .feat li{color:#efe6d6}
+.gc .feat li::before{background:#1e623f;border:2px solid #d4af37;border-radius:50%;width:9px;height:9px}
+.gc .btn.gold{background:#d4af37;border-color:#d4af37;color:#1f1409}
+.gc .phone{background:#0f0905}
+.gc .latest{border-color:#d4af37}

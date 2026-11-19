@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-19",
+  "type": "announcement",
+  "title": "New game: The Grand Tabletop Compendium",
+  "message": "A candlelit parlour with ten games at one table: royal strategy, tumbling dice, quiet patience and two dungeon-crawling card games. Free, no ads, and it works offline once installed.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Chess, Shogi, Checkers and Mancala against an AI, with pass and play for Chess and Mancala",
+     "Backgammon, Mahjong Solitaire, Klondike and FreeCell",
+     "Scoundrel and Regicide, two roguelike card games played with a standard deck",
+     "Easy, Normal and Hard opponents, and a trophy cabinet for your wins"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-18",
   "type": "update",
   "title": "Crystal Circuit 1.7.0: Story mode",
