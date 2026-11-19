@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.9.1: Spring Mikado gets tougher",
+  "message": "Slow and steady is no longer a guaranteed win.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Creep too slowly, or stop mid-pull, and the disc sticks and judders",
+     "Scraping past neighbouring discs now strains the tray, so steer through a gap",
+     "The steadiness bar tells you what's going wrong"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.9.0: the patience pack",
   "message": "Nine new solitaire games and a Patience shelf, bringing the Compendium to 54 games on the road to 101.",
   "changes": [
