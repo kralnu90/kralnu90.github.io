@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.10.0: Dog Rummy",
+  "message": "A family favourite joins the Cards shelf, bringing the Compendium to 55 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Dog Rummy: a wild-card rummy where the dog rank climbs from Aces to Kings, one round at a time",
+     "Draw from the deck or risk taking the whole discard pile",
+     "Lay sets and runs, add to anyone's hands, and chip out to score zero",
+     "2 to 4 players against the AI or with Pass & Play"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.9.1: Spring Mikado gets tougher",
   "message": "Slow and steady is no longer a guaranteed win.",
   "changes": [
