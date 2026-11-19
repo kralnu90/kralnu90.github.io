@@ -2,6 +2,20 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.8.1: Blackjack fix",
+  "message": "A quick fix for the casino.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Fixed: in Blackjack, the Deal button and bet chips stopped working after a hand finished"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.8.0: the Casino",
   "message": "A whole new Casino shelf with seven tables, bringing the Compendium to 44 games. Everything is played with free pretend chips.",
   "changes": [
