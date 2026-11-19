@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.10.1: swap the dog",
+  "message": "A house rule for Dog Rummy.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Hold the real card a dog is standing in for? Swap it into that hand on the table and take the dog",
+     "Dogs in runs now show in the gap they fill",
+     "The AI swaps for dogs too"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.10.0: Dog Rummy",
   "message": "A family favourite joins the Cards shelf, bringing the Compendium to 55 games.",
   "changes": [
