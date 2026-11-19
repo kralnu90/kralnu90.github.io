@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.3.0: words and wild cards",
+  "message": "Four word games and a fast card game join the parlour, bringing it to twenty tables.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Tilecraft: a crossword tile game for 2 to 4 players, with AI opponents that know over 110,000 words",
+     "Word Lock: a daily five-letter word puzzle, plus practice and set-a-word-for-a-friend",
+     "Word Wheel and Word Grid: find words in a wheel of nine letters, or race the clock on a 4×4 grid",
+     "Colour Clash: Skips, Reverses, +2s, Wilds and a \"Last card!\" call, for 2 to 6 players"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.2.0: family game night",
   "message": "Five new tables in the parlour, with room for up to six players in any mix of people and AI.",
   "changes": [
