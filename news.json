@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.8.0: the Casino",
+  "message": "A whole new Casino shelf with seven tables, bringing the Compendium to 44 games. Everything is played with free pretend chips.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Blackjack with basic strategy hints, and Texas Hold'em against five AI players",
+     "Single-zero Roulette, Video Poker (Jacks or Better), Baccarat and Craps",
+     "The Lucky Lantern slot machine",
+     "One shared chip bank, topped up by the house whenever you run dry. Chips can never be bought"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.7.1: Knucklebones",
   "message": "The bone-dice duel joins the Dice & Tiles shelf, bringing the Compendium to 37 games.",
   "changes": [
