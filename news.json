@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.5.1: a tidier parlour",
+  "message": "With 31 games on the shelves, the main menu has had a tidy-up.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Five shelves: Board Games, Cards, Dice & Tiles, Family & Party, and Words & Puzzles",
+     "Each shelf opens its own page, with rules one tap away on every game",
+     "A Recently played row and \"In progress\" badges"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.5.0: stones and springs",
   "message": "Two more tables: the ancient game of Go, and a steady-hand tray game inspired by a classic wooden toy.",
   "changes": [
