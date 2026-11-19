@@ -2,6 +2,22 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.9.0: the patience pack",
+  "message": "Nine new solitaire games and a Patience shelf, bringing the Compendium to 54 games on the road to 101.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Spider (1, 2 or 4 suits), Yukon, Scorpion, Forty Thieves and Canfield",
+     "Pyramid, Golf, TriPeaks and Aces Up",
+     "A new Patience shelf, with Klondike and FreeCell moved there too"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.8.2: Three Card Poker",
   "message": "A new table in the Casino, bringing the Compendium to 45 games.",
   "changes": [
