@@ -2,6 +2,23 @@
  {
   "date": "2026-11-19",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.6.0: the puzzle page",
+  "message": "Three puzzle-page favourites join the Words & Puzzles shelf, bringing the Compendium to 34 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Arrow Words: clues inside the grid, with arrows showing which way each answer runs",
+     "Codeword: a crossword where every letter is a number. Crack the code from two starter letters",
+     "Word Search: nineteen themes on three levels, swipe to circle",
+     "Each has a daily puzzle, plus as many new ones as you like"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.5.1: a tidier parlour",
   "message": "With 31 games on the shelves, the main menu has had a tidy-up.",
   "changes": [
