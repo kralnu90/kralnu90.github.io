@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-20",
+  "type": "update",
+  "title": "Grand Tabletop Compendium 1.11.0: Landlords of Larkford",
+  "message": "An original property-trading board game moves into town, bringing the Compendium to 56 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Buy the streets of Larkford, build houses and hotels, and charge rent",
+     "Auctions, trading, mortgages, Fortune and Town Hall cards, and the Lock-up",
+     "2 to 6 players, people or AI",
+     "Timed games (richest after 20 rounds) or Classic (last one standing)"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-19",
   "type": "update",
   "title": "Grand Tabletop Compendium 1.10.1: swap the dog",
