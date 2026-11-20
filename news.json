@@ -2,6 +2,22 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Iron Dominion v0.3.3: Strike Force",
+  "message": "Stage 3, The full war, is complete.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "1,000-point Strike Force battles on a longer battlefield",
+     "A Doubled starter force for quick big games",
+     "A balance pass across all four armies"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Iron Dominion v0.3.2: the Chitin Brood",
   "message": "The fourth army crawls out of the dark.",
   "changes": [
