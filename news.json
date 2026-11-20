@@ -2,6 +2,23 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.12.0: Crokinole and Carrom",
+  "message": "Two flicking classics arrive with real disc physics, bringing the Compendium to 58 games. Crokinole is the new featured table.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Crokinole: flick discs across a round maple board, knock your rival into the ditch and sink the 20",
+     "Carrom: strike and pocket your nine pieces, and cover the red queen",
+     "Real ricochets, peg bounces and wooden clacks, against the AI or pass and play",
+     "A new Flick & Skill shelf, with Spring Mikado moving in too"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Iron Dominion v0.3.3: Strike Force",
   "message": "Stage 3, The full war, is complete.",
   "changes": [
