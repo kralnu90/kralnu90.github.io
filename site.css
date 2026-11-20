@@ -441,3 +441,12 @@ body.wip{--ground:#16141d;--turf:#211e2b;--line:#3a3547;--chalk:#ece3cc;--mist:#
 .gc .btn.gold{background:#d4af37;border-color:#d4af37;color:#1f1409}
 .gc .phone{background:#0f0905}
 .gc .latest{border-color:#d4af37}
+
+/* Iron Dominion */
+.idm .tagline{color:#9cc2f0}
+.idm h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.04em;text-transform:uppercase}
+.idm h3 span{color:#d9b54a}
+.idm .feat li{color:#efe6d6}
+.idm .feat li::before{background:#d0702c;border-radius:1px;width:8px;height:8px}
+.idm .fact{background:rgba(0,0,0,.35);border-color:#4a3a2c;color:#efe6d6}
+.idm .btn.gold{background:#d9b54a;border-color:#d9b54a;color:#1d1406}

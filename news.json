@@ -1,6 +1,23 @@
 [
  {
   "date": "2026-11-20",
+  "type": "new",
+  "title": "New work in progress: Iron Dominion",
+  "message": "A grimdark tabletop wargame for your phone, close to Kris's heart. Stage 1, First blood, is playable now.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "Two original armies at 500 points: the Ironclad Covenant and the Rust Tide",
+     "Squads of models on a gridded battlefield with ruins, cover and line of sight",
+     "Hands-on dice: roll to hit, sweep away the misses, tap to re-roll, and roll your own saves",
+     "Hold five objectives over five rounds, against the AI or a friend"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
   "type": "update",
   "title": "Grand Tabletop Compendium 1.11.0: Landlords of Larkford",
   "message": "An original property-trading board game moves into town, bringing the Compendium to 56 games.",
