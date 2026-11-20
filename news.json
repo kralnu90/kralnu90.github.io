@@ -2,6 +2,23 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Iron Dominion v0.3.2: the Chitin Brood",
+  "message": "The fourth army crawls out of the dark.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "New army: the Chitin Brood, a fast alien swarm that can charge even after advancing",
+     "Seven datasheets including the Brood Matriarch, Razorfiends and the Chitin Behemoth",
+     "The Tunnel Wyrm bursts up in no-man's land after both armies deploy",
+     "Three sub-factions and the Adrenal Surge Gambit"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Iron Dominion v0.3.1: the Auric Concord",
   "message": "A third army joins the war.",
   "changes": [
