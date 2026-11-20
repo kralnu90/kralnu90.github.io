@@ -2,6 +2,22 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.12.1: a touch of class",
+  "message": "A graphics pass across the whole parlour, and the Casino gets its own black-and-gold room.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Real walnut grain, polished brass buttons, gilt titles and linen-finish cards",
+     "The Casino: black lacquer, art deco gold, and emerald tables with padded leather rails",
+     "Clay casino chips, a brass-rimmed roulette wheel and a slot machine with marquee lights"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.12.0: Crokinole and Carrom",
   "message": "Two flicking classics arrive with real disc physics, bringing the Compendium to 58 games. Crokinole is the new featured table.",
   "changes": [
