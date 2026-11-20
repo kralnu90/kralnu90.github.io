@@ -1,6 +1,24 @@
 [
  {
   "date": "2026-11-20",
+  "type": "update",
+  "title": "Iron Dominion v0.2.0: Muster",
+  "message": "Stage 2 is in: build your own armies and take them to war.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "Muster: build and save army lists with points, squad sizes and free wargear swaps",
+     "Leaders can join a squad, take wounds last and give it a bonus",
+     "Two new leaders, the Oathkeeper and the Wrenchwright",
+     "Three sub-factions per army, each with its own army rule",
+     "500-point Skirmish or 750-point Clash battles"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
   "type": "announcement",
   "title": "New work in progress: Iron Dominion",
   "message": "A grimdark tabletop wargame for your phone, close to Kris's heart. Stage 1, First blood, is playable now.",
