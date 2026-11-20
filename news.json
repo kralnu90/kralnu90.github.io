@@ -2,6 +2,22 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Iron Dominion v0.3.1: the Auric Concord",
+  "message": "A third army joins the war.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "New army: the Auric Concord, with battlesuits, drones, marksmen and the Railspire Strider",
+     "Army rule Measured Fire, three sub-factions and the Overcharge Gambit",
+     "Pick your enemy when you start a battle, or let the game surprise you"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Iron Dominion v0.3.0: Tactics",
   "message": "Stage 3 begins: new ways to outfox your opponent.",
   "changes": [
