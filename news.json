@@ -2,6 +2,23 @@
  {
   "date": "2026-11-20",
   "type": "update",
+  "title": "Iron Dominion v0.3.0: Tactics",
+  "message": "Stage 3 begins: new ways to outfox your opponent.",
+  "changes": [
+   {
+    "game": "Iron Dominion",
+    "items": [
+     "Gambits: spend command points on special orders like Focused Fire, Go to Ground and Rapid Assault",
+     "Secondary missions: hold two mission cards and score them for bonus VP",
+     "Three battlefields, including the Pincer where armies arrive from opposite corners",
+     "Balance: the Rustborn Mob is back to Toughness 5"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-20",
+  "type": "update",
   "title": "Iron Dominion v0.2.0: Muster",
   "message": "Stage 2 is in: build your own armies and take them to war.",
   "changes": [
