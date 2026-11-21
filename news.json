@@ -2,6 +2,22 @@
  {
   "date": "2026-11-21",
   "type": "update",
+  "title": "Grand Tabletop Compendium 1.14.0: Snooker",
+  "message": "Snooker comes to the Flick & Skill shelf, bringing the Compendium to 69 games.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Reds and colours, the clearance from yellow to black, foul points and running breaks",
+     "Short, medium or full frames against The Whirlwind or a friend",
+     "A solo high-break challenge with your best breaks saved"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-21",
+  "type": "update",
   "title": "Grand Tabletop Compendium 1.13.0: stocking the shelf",
   "message": "Ten new skill games arrive, bringing the Compendium to 68.",
   "changes": [
