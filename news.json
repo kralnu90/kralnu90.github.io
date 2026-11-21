@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-21",
+  "type": "update",
+  "title": "Grand Tabletop Compendium 1.13.0: stocking the shelf",
+  "message": "Ten new skill games arrive, bringing the Compendium to 68.",
+  "changes": [
+   {
+    "game": "Grand Tabletop Compendium",
+    "items": [
+     "Pool, Curling, Table Shuffleboard, Pétanque and Penny Football on the Flick & Skill shelf",
+     "A new Pub & Fairground shelf: Darts, Shove Ha'penny, Table Skittles, Bagatelle and the Steady Hand buzz wire",
+     "Real physics throughout, and AI opponents that rehearse every shot",
+     "Hold the ice to sweep in Curling; steady your swaying arm in Darts"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-20",
   "type": "update",
   "title": "Grand Tabletop Compendium 1.12.1: a touch of class",
