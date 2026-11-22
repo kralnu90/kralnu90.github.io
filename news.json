@@ -1,6 +1,23 @@
 [
  {
   "date": "2026-11-22",
+  "type": "update",
+  "title": "Terminal Apprentice 1.1.0: the Journeyman lessons",
+  "message": "Finished your Apprentice certificate? Eight new lessons and an exam take you further with Claude Code.",
+  "changes": [
+   {
+    "game": "Terminal Apprentice",
+    "items": [
+     "Memory and context, prompting like a pro, and permission rules",
+     "Your own skills, subagents, hooks and MCP servers",
+     "Git workflows: reviews, worktrees and claude -p for scripts",
+     "New put-in-order and spot-the-risky-line steps, plus a Journeyman certificate"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-22",
   "type": "announcement",
   "title": "New in the workshop: Terminal Apprentice",
   "message": "A free, friendly beginner's guide to Claude Code, the AI coding helper that works in your terminal. Learn in a pretend terminal where nothing can break.",
