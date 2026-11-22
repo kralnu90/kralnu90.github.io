@@ -197,6 +197,22 @@ section{padding-block:48px 8px}
 .pq .latest{border-color:#f2c14e}
 .pq .phone{background:#05051a;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(111,184,255,.2),inset 0 0 0 1px rgba(255,255,255,.08)}
 
+/* Terminal Apprentice: a dark terminal window with an amber prompt */
+.game.ta{border:1px solid #3a4466;background:linear-gradient(170deg,#232b47,#0b0d16 75%);padding-top:52px}
+.ta .termbar{position:absolute;top:0;left:0;right:0;height:34px;display:flex;align-items:center;gap:7px;padding:0 16px;background:#151a2c;border-bottom:1px solid #2a3150;border-radius:inherit;border-bottom-left-radius:0;border-bottom-right-radius:0;pointer-events:none;font:600 12px/1 "JetBrains Mono",ui-monospace,monospace;color:#9aa3bf}
+.ta .termbar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.ta .termbar i+i{background:#ffbd2e}.ta .termbar i+i+i{background:#28c940}
+.ta .termbar span{margin-left:auto}
+.ta .tagline{color:#f5a623}
+.ta h3{font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:600;font-size:clamp(32px,5vw,50px);line-height:1;letter-spacing:-.02em}
+.ta h3 span{color:#f5a623}
+.ta .bark{border-radius:4px 14px 14px 14px;color:#e9ecf5;background:#222a42;border:1px solid #323c5c}
+.ta .bark small{color:#ffc861}
+.ta .feat li{color:#e3e8f2}
+.ta .feat li::before{content:">";left:0;top:0;width:auto;height:auto;background:none;color:#f5a623;font:600 15px/1.5 "JetBrains Mono",ui-monospace,monospace}
+.ta .btn.gold{background:#f5a623;border-color:#f5a623;color:#1b1404}
+.ta .latest{border-color:#f5a623}
+.ta .phone{background:#0b0d16;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 60px rgba(245,166,35,.16),inset 0 0 0 1px rgba(255,255,255,.08)}
+
 /* news */
 .news-list{display:grid;gap:16px}
 .post{border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:var(--turf);display:grid;gap:10px}
@@ -215,6 +231,7 @@ section{padding-block:48px 8px}
 .change.mm{background:linear-gradient(150deg,rgba(58,42,62,.85),rgba(20,18,24,.85))} .change.mm h4{color:var(--mm-amber)}
 .change.pk{background:linear-gradient(150deg,rgba(42,50,56,.9),rgba(17,21,24,.9))} .change.pk h4{color:var(--pk-lamp)}
 .change.gc{background:linear-gradient(150deg,rgba(42,52,64,.9),rgba(18,23,29,.9))} .change.gc h4{color:var(--gc-orange)}
+.change.ta{background:linear-gradient(150deg,rgba(35,43,71,.92),rgba(11,13,22,.92))} .change.ta h4{color:#f5a623}
 .change.tr{background:linear-gradient(150deg,rgba(43,38,58,.92),rgba(22,20,29,.92))} .change.tr h4{color:#e0ae52}
 .more{justify-self:start;font-family:var(--body)}
 .news-empty{color:var(--mist)}
@@ -413,6 +430,7 @@ body.wip{--ground:#16141d;--turf:#211e2b;--line:#3a3547;--chalk:#ece3cc;--mist:#
 .qp.gc{--qa:var(--gc-a);--qb:var(--gc-b);--qc:var(--gc-orange)}
 .qp.pq{--qa:#1e2a5a;--qb:#05051a;--qc:#6fb8ff}
 .qp.pm{--qa:#6cbf4a;--qb:#3f8f3a;--qc:#ffd23f}
+.qp.ta{--qa:#232b47;--qb:#0b0d16;--qc:#f5a623}
 .qp.tr{--qa:#2b2640;--qb:#16141d;--qc:#9ad3cf}
 @media (max-width:860px){.quick{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:440px){.quick{grid-template-columns:1fr}.qp{grid-template-columns:minmax(0,1fr) auto;align-items:center}.qp .qt{grid-column:2;grid-row:1/3;align-self:center}}

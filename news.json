@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-22",
+  "type": "announcement",
+  "title": "New in the workshop: Terminal Apprentice",
+  "message": "A free, friendly beginner's guide to Claude Code, the AI coding helper that works in your terminal. Learn in a pretend terminal where nothing can break.",
+  "changes": [
+   {
+    "game": "Terminal Apprentice",
+    "items": [
+     "Eight short lessons, from starting Claude Code to planning, reviewing changes and committing",
+     "Help the Paws & Whiskers pet shelter fix its website, and learn to say no to changes you didn't ask for",
+     "Stars for every lesson, a cheat sheet and a certificate when you finish",
+     "Works offline and installs to your home screen"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-21",
   "type": "update",
   "title": "Grand Tabletop Compendium 1.14.0: Snooker",

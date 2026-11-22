@@ -17,7 +17,7 @@ The home page for Kralnu Games: free indie games you play in your browser.
 
 - `index.html` — front page: three doorways, all news, about
 - `play/` — fun games (Fairway Tales, Tight Lines, Solaris Gambit, Metropolitan Misadventure, The Grand Tabletop Compendium)
-- `learn/` — learn-to-code games (Python Kitchen, Garage Code)
+- `learn/` — learn-to-code games (Python Kitchen, Garage Code, Python Quest, Terminal Apprentice)
 - `kids/` — games for young children (coming soon)
 - `site.css` — shared styles; each section sets its own theme with a body class (`play`, `learn`, `kids`)
 - `news.js` + `news.json` — news on every page. A section's `<section id="news" data-games="...">` only shows posts about its games.
