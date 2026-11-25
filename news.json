@@ -2,6 +2,22 @@
  {
   "date": "2026-11-25",
   "type": "update",
+  "title": "Terminal Apprentice 1.3.0: the Sandbox",
+  "message": "Free play has arrived: a pretend terminal where you can try anything you've learned.",
+  "changes": [
+   {
+    "game": "Terminal Apprentice",
+    "items": [
+     "A pretend shell and a pretend Claude: try claude and its flags, slash commands, @ mentions and ! commands",
+     "Permission prompts that follow your mode, plan approval, rewind, tests and commits",
+     "Twelve optional missions, plus tap-to-fill suggestions and key buttons for playing on a phone"
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-25",
+  "type": "update",
   "title": "Terminal Apprentice 1.2.0: Craftsman, Master and a pixel makeover",
   "message": "Two new stages take you from intermediate to advanced, and the whole game gets a fun pixel-art look.",
   "changes": [
