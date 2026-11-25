@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-25",
+  "type": "update",
+  "title": "Terminal Apprentice 1.2.0: Craftsman, Master and a pixel makeover",
+  "message": "Two new stages take you from intermediate to advanced, and the whole game gets a fun pixel-art look.",
+  "changes": [
+   {
+    "game": "Terminal Apprentice",
+    "items": [
+     "🛠️ Craftsman (intermediate): effort levels, permission modes, rules files, your editor and the web, power shortcuts, debugging and Claude in Chrome",
+     "🧙 Master (advanced): plugins, Claude on GitHub, scripting, advanced hooks, agent teams, MCP, security and the Agent SDK",
+     "A pixel-art lesson map for every stage, a pixel Lumen who cheers you on, answer streaks and confetti",
+     "Every Apprentice and Journeyman lesson rechecked against the latest Claude Code docs"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-22",
   "type": "update",
   "title": "Terminal Apprentice 1.1.0: the Journeyman lessons",
