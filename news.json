@@ -1,5 +1,73 @@
 [
  {
+  "date": "2026-11-26",
+  "type": "update",
+  "title": "Meet K-Buks: one currency for every Kralnu game",
+  "message": "Every game with money now uses K-Buks (Kb), the Kralnu Games currency, with a new hand-drawn gold coin icon. Your savings carry over exactly as they were.",
+  "changes": [
+   {
+    "game": "Tight Lines",
+    "items": [
+     "Fish Bucks are now K-Buks (0.40.0)"
+    ]
+   },
+   {
+    "game": "Fairway Tales",
+    "items": [
+     "Coins are now K-Buks (1.4.1)"
+    ]
+   },
+   {
+    "game": "Solaris Gambit",
+    "items": [
+     "Coins are now K-Buks (1.0.1)"
+    ]
+   },
+   {
+    "game": "The Grand Tabletop Compendium",
+    "items": [
+     "The casino bank, Landlords of Larkford money and Torchlight Delve gold are now K-Buks (1.14.3)"
+    ]
+   },
+   {
+    "game": "Crystal Circuit",
+    "items": [
+     "Gil is now K-Buks (1.7.1)"
+    ]
+   },
+   {
+    "game": "30× to Remember",
+    "items": [
+     "Gold is now K-Buks (0.12.1)"
+    ]
+   },
+   {
+    "game": "Last Light",
+    "items": [
+     "Coins are now K-Buks"
+    ]
+   },
+   {
+    "game": "Metropolitan Misadventure",
+    "items": [
+     "Cash is now K-Buks"
+    ]
+   },
+   {
+    "game": "Garage Code",
+    "items": [
+     "Your takings are now paid in K-Buks"
+    ]
+   },
+   {
+    "game": "Python Quest",
+    "items": [
+     "Gil is now K-Buks"
+    ]
+   }
+  ]
+ },
+ {
   "date": "2026-11-25",
   "type": "update",
   "title": "Terminal Apprentice 1.3.0: the Sandbox",
